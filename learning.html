@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning, Decisions &amp; Risks — Wellabe Strategy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="36" height="36" rx="7" fill="#FFB612"/>
+        <path d="M7 8 L7 24 L13 24 L13 20 L11 20 L11 8 Z" fill="#111111" opacity="0.95"/>
+        <path d="M15 8 L15 24 L21 24 L21 20 L19 20 L19 8 Z" fill="#111111" opacity="0.95"/>
+        <path d="M23 16 Q26 12 29 16 Q26 20 23 16 Z" fill="#111111" opacity="0.5"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="nav-logo-brand">Wellabe</span>
+        <span class="nav-logo-sub">Strategy · 2025–2030</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html"     class="nav-link">Home</a></li>
+      <li><a href="growth.html"    class="nav-link">Growth</a></li>
+      <li><a href="digital.html"   class="nav-link">Digital-First</a></li>
+      <li><a href="capital.html"   class="nav-link">Capital</a></li>
+      <li><a href="quarterly.html" class="nav-link">Quarterly View</a></li>
+      <li><a href="learning.html"  class="nav-link active">Learning &amp; Risks</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <p class="page-header-eyebrow">Layer 4 — Learning &amp; Adaptation</p>
+    <h1>Learning, Decisions &amp; Risks</h1>
+    <p>Strategy without feedback loops is a plan you can't update. This section captures what changed, what we decided, and what we're watching. The team can add and edit entries directly on this page.</p>
+  </div>
+</header>
+
+<main>
+  <div class="page-wrap">
+
+    <section class="section" aria-labelledby="ld-heading">
+
+      <!-- Header row with controls -->
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:var(--space-5);">
+        <div>
+          <p class="section-label">Living Record</p>
+          <h2 class="section-title" id="ld-heading">Decisions, Changed Assumptions &amp; Risks</h2>
+          <p class="section-body" style="margin-top:0.5rem;">Entries are saved in your browser and persist across sessions. All team members using this site on the same device share the same view. For a shared team record, export and re-import the JSON (see below).</p>
+        </div>
+        <button class="btn btn-primary" id="ld-add-btn" style="flex-shrink:0;margin-top:0.5rem;">+ Add Entry</button>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="learning-controls">
+        <button class="btn btn-primary ld-filter" data-filter="all">All</button>
+        <button class="btn btn-ghost ld-filter" data-filter="decision">📋 Decisions</button>
+        <button class="btn btn-ghost ld-filter" data-filter="assumption">⚠️ Changed Assumptions</button>
+        <button class="btn btn-ghost ld-filter" data-filter="risk">🔴 Risks</button>
+      </div>
+
+      <!-- Items container — populated by JS -->
+      <div class="learning-items" id="ld-items" aria-live="polite"></div>
+
+      <!-- Export / Import helper -->
+      <div style="margin-top:var(--space-8);padding:var(--space-5);background:var(--wb-white);border:1px solid var(--wb-border);border-radius:var(--radius-lg);">
+        <p class="card-label">Share Entries With Your Team</p>
+        <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;margin-bottom:1rem;line-height:1.65;">Entries are stored in this browser's local storage. To share them: export as JSON, drop the file in the <code style="font-size:0.8rem;background:var(--wb-bg);padding:2px 5px;border-radius:3px;">data/kpis.json</code> <code style="font-size:0.8rem;background:var(--wb-bg);padding:2px 5px;border-radius:3px;">learningAndDecisions</code> array, and redeploy. Or paste exported JSON into a teammate's browser using the import button below.</p>
+        <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+          <button class="btn btn-ghost" id="ld-export-btn">Export JSON</button>
+          <button class="btn btn-ghost" id="ld-import-btn">Import JSON</button>
+          <button class="btn btn-danger" id="ld-clear-btn" style="margin-left:auto;">Clear All Entries</button>
+        </div>
+        <textarea id="ld-import-textarea" placeholder="Paste JSON here and click Import JSON above…" style="display:none;width:100%;margin-top:1rem;height:120px;font-family:monospace;font-size:0.8rem;padding:0.75rem;border:1px solid var(--wb-border);border-radius:var(--radius);background:var(--wb-bg);"></textarea>
+      </div>
+
+    </section>
+
+    <!-- GUIDANCE SECTION -->
+    <section class="section" aria-labelledby="guidance-heading">
+      <p class="section-label">How To Use This Section</p>
+      <h2 class="section-title" id="guidance-heading">What Belongs Here</h2>
+      <div class="three-col">
+        <div class="card" style="border-top:3px solid #1A6FA0;">
+          <p class="card-label">📋 Strategic Decisions</p>
+          <p class="card-body" style="margin-top:0.5rem;">Major decisions that commit resources, change direction, or resolve a material ambiguity. Not every management meeting agenda item — only decisions that future readers would need to understand <em>why</em> we are on the path we are on.<br><br><strong>Example:</strong> "Decided to pursue C-2 financing reinsurance with Hannover as the primary capital solution over quota share. Rationale: maintains full block returns."</p>
+        </div>
+        <div class="card" style="border-top:3px solid var(--status-yellow);">
+          <p class="card-label">⚠️ Changed Assumptions</p>
+          <p class="card-body" style="margin-top:0.5rem;">When a key assumption that underpins the strategy changes — the strategy should adapt. Documenting the assumption shift is how leadership tracks whether the plan is still valid.<br><br><strong>Example:</strong> "MS rerate flexibility is more constrained than modeled — state regulators pushing back in three states. Updating capital scenarios to reflect 10% rerate cap sensitivity."</p>
+        </div>
+        <div class="card" style="border-top:3px solid var(--status-red);">
+          <p class="card-label">🔴 Strategic Risks</p>
+          <p class="card-body" style="margin-top:0.5rem;">Named, owned risks with a specific mechanism, trigger, and exposure. Not generic risk language. The owner is accountable for monitoring and response.<br><br><strong>Example:</strong> "Aspida Re reduces MS flow capacity. Owner: Sara Lehan. Trigger: capacity reduction &gt;20%. Exposure: capital plan requires restructuring, potential sales slowdown."</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     ADD / EDIT MODAL
+     ============================================================ -->
+<div class="modal-overlay" id="ld-modal" role="dialog" aria-modal="true" aria-labelledby="ld-modal-title">
+  <div class="modal">
+    <h3 id="ld-modal-title">Add Entry</h3>
+    <form id="ld-form" novalidate>
+      <input type="hidden" id="ld-edit-idx" value="-1">
+
+      <div class="form-group">
+        <label for="ld-type">Type</label>
+        <select id="ld-type" name="type" required>
+          <option value="decision">📋 Strategic Decision</option>
+          <option value="assumption">⚠️ Changed Assumption</option>
+          <option value="risk">🔴 Risk</option>
+        </select>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="form-group">
+          <label for="ld-date">Quarter / Period</label>
+          <input type="text" id="ld-date" name="date" placeholder="e.g. Q1 2026" required>
+        </div>
+        <div class="form-group">
+          <label for="ld-owner">Owner</label>
+          <input type="text" id="ld-owner" name="owner" placeholder="Name or team" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="ld-title">Title</label>
+        <input type="text" id="ld-title" name="title" placeholder="Short, specific title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ld-description">Description</label>
+        <textarea id="ld-description" name="description" placeholder="Describe what happened — the mechanism, the context, the rationale. Avoid generic language." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="ld-impact">Impact / Downstream Effect</label>
+        <textarea id="ld-impact" name="impact" placeholder="What does this mean for the strategy, a KPI, or an assumption?" style="min-height:60px;"></textarea>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="ld-cancel">Cancel</button>
+        <button type="submit" class="btn btn-primary">Save Entry</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <p><strong>Wellabe</strong> · Learning, Decisions &amp; Risks · Internal Use Only · <script>document.write(new Date().getFullYear())</script></p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+// Export / Import / Clear helpers
+document.getElementById('ld-export-btn').addEventListener('click', () => {
+  const items = JSON.parse(localStorage.getItem('wellabe_learning_decisions') || '[]');
+  const blob = new Blob([JSON.stringify(items, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'wellabe-learning-decisions.json';
+  a.click();
+});
+
+const importBtn = document.getElementById('ld-import-btn');
+const importTA  = document.getElementById('ld-import-textarea');
+
+importBtn.addEventListener('click', () => {
+  if (importTA.style.display === 'none') {
+    importTA.style.display = 'block';
+    importBtn.textContent = 'Confirm Import';
+  } else {
+    try {
+      const items = JSON.parse(importTA.value);
+      if (!Array.isArray(items)) throw new Error('Not an array');
+      localStorage.setItem('wellabe_learning_decisions', JSON.stringify(items));
+      location.reload();
+    } catch(e) {
+      alert('Invalid JSON. Please paste a valid exported array.');
+    }
+  }
+});
+
+document.getElementById('ld-clear-btn').addEventListener('click', () => {
+  if (confirm('Clear all entries from this browser? This cannot be undone.')) {
+    localStorage.removeItem('wellabe_learning_decisions');
+    location.reload();
+  }
+});
+</script>
+</body>
+</html>

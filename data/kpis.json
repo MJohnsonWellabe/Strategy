@@ -1,0 +1,332 @@
+{
+  "quarter": "Q1 2026",
+  "lastUpdated": "May 2026",
+  "summary": {
+    "growth": { "green": 4, "yellow": 2, "red": 0 },
+    "digital": { "green": 23, "yellow": 1, "red": 0 },
+    "capital": { "green": 4, "yellow": 0, "red": 2 }
+  },
+  "growth": [
+    {
+      "id": "g1",
+      "objective": "MS Optimization — Execution",
+      "owner": "Matt Johnson",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "19% weighted premium rerates. 3 states flipped charters (MO, CO, KS). Delayed commission reduction to 5/1."
+    },
+    {
+      "id": "g2",
+      "objective": "MS Optimization — Outcome",
+      "owner": "Matt Johnson",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "$2M in YTD savings on Integrity marketing allowance. $1.2M on MS incentive savings. $270K in GHN savings. 49% UW mix YTD. 8.9% rolling 12-month lapse through 3/31."
+    },
+    {
+      "id": "g3",
+      "objective": "Ancillary Digitization — Execution",
+      "owner": "Matt Johnson",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "CI Easy button implemented."
+    },
+    {
+      "id": "g4",
+      "objective": "Ancillary Digitization — Outcome",
+      "owner": "Matt Johnson",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "20% increase in ancillary health sales in Q1 2026 vs Q1 2025."
+    },
+    {
+      "id": "g5",
+      "objective": "PN Digitization — Execution",
+      "owner": "Matt Johnson",
+      "type": "Execution",
+      "status": "yellow",
+      "narrative": "Annual plan in process. Quality score not yet implemented. No agents terminated. Minor service improvements to date."
+    },
+    {
+      "id": "g6",
+      "objective": "PN Digitization — Outcome",
+      "owner": "Matt Johnson",
+      "type": "Outcome",
+      "status": "yellow",
+      "narrative": "ME% 2025: 44.7% vs 2026: 50.4%. MP% level to prior year. Avg face slightly up."
+    }
+  ],
+  "digital": [
+    {
+      "id": "d1",
+      "objective": "Data Migration Completeness",
+      "owner": "Vik (Data)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 35% migrated into Data Lakehouse."
+    },
+    {
+      "id": "d2",
+      "objective": "Enterprise Data Quality Score",
+      "owner": "Vik (Data)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "Score: 95 (target >90). Strong data quality achieved."
+    },
+    {
+      "id": "d3",
+      "objective": "Report Migration Rate",
+      "owner": "Vik (Data)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 17% of reports migrated to Lakehouse."
+    },
+    {
+      "id": "d4",
+      "objective": "User Engagement Rate",
+      "owner": "Vik (Data)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "On Track — 50% user engagement rate, above goal."
+    },
+    {
+      "id": "d5",
+      "objective": "AI Innovation and Deployment",
+      "owner": "Vik (Data)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 1 AI use case in pipeline. Intake and use cases on target."
+    },
+    {
+      "id": "d6",
+      "objective": "Automate Agent Administration & Compensation",
+      "owner": "Marty (Ops)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 9% increase. 2026 health lack-of-production automation driving the increase. Targeting health state management and health econtracting changes."
+    },
+    {
+      "id": "d7",
+      "objective": "Automate New Business Processing",
+      "owner": "Marty (Ops)",
+      "type": "Execution",
+      "status": "yellow",
+      "narrative": "1% increase. Health below 2025 levels due to GI/SEP volumes and slight increase in underwritten cases not going STP. Preneed trending up due to stoppage of paper apps in Nov 2025. GI/SEP Med Sup automation efforts in progress."
+    },
+    {
+      "id": "d8",
+      "objective": "Automate Customer Success Requests",
+      "owner": "Marty (Ops)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 8% increase. Seeing benefits of one-time credit card automation completed at end of 2025. 2026 Preneed grace period management driving up automation."
+    },
+    {
+      "id": "d9",
+      "objective": "Expand Self-Service Phone Offerings",
+      "owner": "Marty (Ops)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 4% increase. Higher IVA usage but no major containment changes. Claims status experience improved. Further opportunities under evaluation."
+    },
+    {
+      "id": "d10",
+      "objective": "Auto Adjudicate Claims",
+      "owner": "Marty (Ops)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track — 0.1% increase. Research underway on future opportunities in Med Sup and ancillary products. Target: auto-adjudicate 6K additional applications/quarter."
+    },
+    {
+      "id": "d11",
+      "objective": "Digital Transformation — Continuous Improvement Culture",
+      "owner": "Maneesh (IT)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track. Agent Admin kaizen event planned for May 2026. Critical items from previous Kaizens incorporated into 2026 goals."
+    },
+    {
+      "id": "d12",
+      "objective": "Mature Architecture Practices",
+      "owner": "Maneesh (IT)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track. Enterprise architecture view in progress. Architectural standards under review for ARB. Architecture incorporated into PACT process."
+    },
+    {
+      "id": "d13",
+      "objective": "Mature AI & Automation Capabilities",
+      "owner": "Maneesh (IT)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track. AI next steps in progress. 1st round of AI intake scheduled for June 2026. AI & Automation CoE for Operations efficiencies underway."
+    },
+    {
+      "id": "d14",
+      "objective": "AI Education & Adoption",
+      "owner": "Maneesh (IT)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "On Track. 333/374 employees actively using Copilot with 20,000 prompts in last 30 days. Collaborating with HR on AI education and change management."
+    },
+    {
+      "id": "d15",
+      "objective": "Speed to Market — Product Rollout Optimization",
+      "owner": "Maneesh (IT)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track. TMO process improvement in progress. Started evaluation of long-term solution."
+    },
+    {
+      "id": "d16",
+      "objective": "Consolidate and Update Agent Portals",
+      "owner": "Allison (Agent)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On Track. MVP launch is on track for late June 2026."
+    },
+    {
+      "id": "d17",
+      "objective": "Agent Journey Mapping",
+      "owner": "Allison (Agent)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "Exercise will begin in May 2026. High-value changes to be identified."
+    },
+    {
+      "id": "d18",
+      "objective": "Customer Communications & Message Center",
+      "owner": "Susan (Rewards)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "Message Center project on track for July/August delivery. Text short code has reached approval. Conversion Reporting in progress."
+    },
+    {
+      "id": "d19",
+      "objective": "Real-Time Engagement Data & VoC Insights",
+      "owner": "Susan (Rewards)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "CE Data Science working with Ent Data to ingest Sentiment, ahead of schedule. CSAT work kicks off in July."
+    },
+    {
+      "id": "d20",
+      "objective": "Remove Friction — Payment, Claims, Onboarding Journeys",
+      "owner": "Susan (Rewards)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "Payment journeys on track to deliver by end of Q2. Claims journey on HI begun and on track for Q3."
+    },
+    {
+      "id": "d21",
+      "objective": "AI-Powered Churn Prediction & Intervention",
+      "owner": "Susan (Rewards)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "Churn modeling begun. Will deliver by end of Q2 with journeys beginning in Q3."
+    },
+    {
+      "id": "d22",
+      "objective": "Unified Customer & Rewards Portal",
+      "owner": "Susan (Rewards)",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "Portal project kicked off. Requirements gathered and work begun."
+    },
+    {
+      "id": "d23",
+      "objective": "Right Talent for Digital Strategy",
+      "owner": "April (HR)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "All ELT roles have a ready-soon internal successor. BOD awareness and plan for CEO succession in place."
+    },
+    {
+      "id": "d24",
+      "objective": "Change Adoption & Sustained Performance",
+      "owner": "April (HR)",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "Demonstrated by dedicated resources and workspace for Agent Portal. Improved movement on PaaP and collaboration of AI strategy."
+    }
+  ],
+  "capital": [
+    {
+      "id": "c1",
+      "objective": "Capital Framework for Decisioning",
+      "owner": "Jeff Harms",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "MVP framework developed and utilized for 26R2 plan. Refinements expected prior to 27R1."
+    },
+    {
+      "id": "c2",
+      "objective": "YE RBC Estimate Within 3% of Actuals",
+      "owner": "Matt Johnson",
+      "type": "Outcome",
+      "status": "green",
+      "narrative": "Pre-covariance RBC calculation within tolerance. Charge by charge ties out well (~2bps off). Slippage in Covariance assumption due to entity-level actual calculations vs. rolled-up modeling calculation."
+    },
+    {
+      "id": "c3",
+      "objective": "Improved Capital Forecasting",
+      "owner": "Matt Johnson",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On track. Significant capital scenario modeling completed in Q1. To be shared with CapCo."
+    },
+    {
+      "id": "c4",
+      "objective": "Enhanced Cash Flow Forecasting",
+      "owner": "Matt Johnson",
+      "type": "Execution",
+      "status": "green",
+      "narrative": "On track. Progress made on liquidity/cash flow model. Appropriate resources assigned. Continue to test and iterate."
+    },
+    {
+      "id": "c5",
+      "objective": "Maintain Projected RBC Above 450% (2026–2028)",
+      "owner": "Sara Lehan",
+      "type": "Outcome",
+      "status": "red",
+      "narrative": "Working several tracks: surplus note, FE block reinsurance, structured reinsurance with Canada Life, Gen Re coinsurance. Nothing close to execution yet. RBC drops below 350% at expected sales levels."
+    },
+    {
+      "id": "c6",
+      "objective": "Capital Opportunities Playbook",
+      "owner": "Jeff Harms",
+      "type": "Execution",
+      "status": "red",
+      "narrative": "Playbook established but does not yet outline which opportunities are preferable under varying circumstances. Further work needed."
+    }
+  ],
+  "learningAndDecisions": [
+    {
+      "id": "l1",
+      "type": "decision",
+      "date": "Q1 2026",
+      "title": "[Decision Title]",
+      "owner": "[Owner]",
+      "description": "Describe the strategic decision made, the alternatives considered, and the rationale.",
+      "impact": "[Impact on strategy or operations]"
+    },
+    {
+      "id": "l2",
+      "type": "assumption",
+      "date": "Q1 2026",
+      "title": "[Assumption That Changed]",
+      "owner": "[Owner]",
+      "description": "Describe what assumption changed, why it changed, and how the strategy should adapt.",
+      "impact": "[Downstream impact]"
+    },
+    {
+      "id": "l3",
+      "type": "risk",
+      "date": "Q1 2026",
+      "title": "[Risk Name]",
+      "owner": "[Owner]",
+      "description": "Describe the specific risk — not in generic language. Name the mechanism, the trigger, and the exposure.",
+      "impact": "[What happens if this materializes]"
+    }
+  ]
+}
