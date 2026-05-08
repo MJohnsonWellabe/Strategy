@@ -8,15 +8,13 @@
 </head>
 <body data-section="growth">
 
-<!-- NAV -->
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="36" rx="7" fill="#FFB612"/>
-        <path d="M7 8 L7 24 L13 24 L13 20 L11 20 L11 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M15 8 L15 24 L21 24 L21 20 L19 20 L19 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M23 16 Q26 12 29 16 Q26 20 23 16 Z" fill="#111111" opacity="0.5"/>
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#FFB612"/>
+        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
@@ -35,7 +33,6 @@
   </div>
 </nav>
 
-<!-- PAGE HEADER -->
 <header class="page-header growth">
   <div class="page-header-inner">
     <p class="page-header-eyebrow">Strategic Enabler · Growth</p>
@@ -47,48 +44,45 @@
 <main>
   <div class="page-wrap">
 
-    <!-- TRACEABILITY -->
-    <section class="section" style="padding-bottom:0;">
+    <!-- PAGE NAVIGATION: clickable anchor links -->
+    <section class="section" style="padding-bottom:0;padding-top:var(--space-6);">
       <div class="trace-chain">
-        <span class="trace-chain-item active">Growth Enabler</span>
+        <span class="trace-chain-item active"><a href="#intent">Strategic Intent</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Strategic Objective</span>
+        <span class="trace-chain-item"><a href="#objectives">What We Committed To</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Execution / Outcome</span>
+        <span class="trace-chain-item"><a href="#phases">Execution Roadmap</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">KPI</span>
+        <span class="trace-chain-item"><a href="#signals">Leadership Signals</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Owner</span>
-        <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Status → Signal</span>
+        <span class="trace-chain-item"><a href="#kpis">KPIs</a></span>
       </div>
     </section>
 
     <!-- STRATEGIC INTENT -->
-    <section class="section" aria-labelledby="intent-heading">
+    <section id="intent" class="section" aria-labelledby="intent-heading">
       <p class="section-label">Strategic Intent</p>
       <h2 class="section-title" id="intent-heading">Why This Enabler Exists</h2>
       <div class="two-col">
         <div>
-          <p class="section-body">Wellabe has momentum. Since 2021 — policy count up 20%, revenue up 24%, STP from 23% to 67%, ancillary sales growing. The demographic tailwind is real: the silver tsunami, record annuity demand, a growing Medicare Supplement market. The question is not whether to grow, but where to double down and where to stop subsidizing underperformance.</p>
+          <p class="section-body">Wellabe has momentum. Since 2021 — policy count up 20%, revenue up 24%, STP from 23% to 67%, ancillary sales growing. The demographic tailwind is real: the silver tsunami and a growing Medicare Supplement market create a window that won't stay open indefinitely. The question is not whether to grow, but where to double down and where to stop subsidizing underperformance.</p>
           <p class="section-body" style="margin-top:1rem;">Growth is not a blanket directive. It is a portfolio of deliberate bets — each with a time horizon, a capital requirement, and a return threshold. Profitable growth in Medicare Supplement funds the platform investment that makes digital possible.</p>
         </div>
         <div>
           <div class="card" style="margin-bottom:var(--space-4);">
             <p class="card-label">What It Is Meant To Solve</p>
             <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem;">
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Over-reliance on traditional distribution channels with limited digital reach</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Underperforming Preneed distribution that dilutes margin without adding volume value</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>No annuity revenue stream — a significant gap as Baby Boomers move to decumulation</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Ancillary health cross-sell at ~2% when the target is 5%</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Over-reliance on traditional distribution channels with limited digital reach</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Underperforming Preneed distribution that dilutes margin without adding volume value</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Ancillary health sales that have not kept pace with the Medicare Supplement growth trajectory</li>
             </ul>
           </div>
           <div class="card">
             <p class="card-label">Key Tradeoffs</p>
             <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem;">
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Medicare Supplement growth is capital-intensive. Aggressive sales scenario exhausts Holdco.</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Preneed pruning reduces short-term revenue by ~18% to protect long-term margin quality</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Annuity growth depends on reinsurance partner execution — capital-light but counterparty-exposed</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Medicare Supplement growth is capital-intensive. Aggressive sales scenario creates RBC pressure that requires external capital solutions.</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Preneed pruning reduces short-term revenue by ~18% to protect long-term margin quality</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Ancillary health growth requires digital investment before it generates scaled returns</li>
             </ul>
           </div>
         </div>
@@ -96,7 +90,7 @@
     </section>
 
     <!-- WHAT WE COMMITTED TO -->
-    <section class="section" aria-labelledby="objectives-heading">
+    <section id="objectives" class="section" aria-labelledby="objectives-heading">
       <p class="section-label">What We Committed To</p>
       <h2 class="section-title" id="objectives-heading">Strategic Objectives</h2>
       <div class="three-col">
@@ -104,25 +98,19 @@
         <div class="card">
           <p class="card-label">Medicare Supplement</p>
           <p class="card-title">Top 5 carrier. 300K+ members. $200M annual sales by 2030.</p>
-          <p class="card-body">60%+ underwriting mix, &lt;24hr turnaround, digital-first enrollment. IRR target 12%+ on new sales. Reinsurance to manage capital strain.</p>
+          <p class="card-body">60%+ underwriting mix, &lt;24hr turnaround, digital-first enrollment. Reinsurance to manage capital strain while maintaining growth trajectory.</p>
         </div>
 
         <div class="card">
           <p class="card-label">Ancillary Health</p>
-          <p class="card-title">$30M+ in annual ancillary sales. Cross-sell from 2% to 5%.</p>
-          <p class="card-body">Hospital Indemnity and Critical Illness as core products. Expansion to younger demographics via digital. White-label opportunities with distribution partners.</p>
+          <p class="card-title">Grow ancillary health sales year-over-year. CI and HI as core products.</p>
+          <p class="card-body">Hospital Indemnity and Critical Illness are the growth vehicles. Expand to younger demographics via digital. White-label opportunities with distribution partners. Growing alongside — not dependent on — Medicare Supplement sales.</p>
         </div>
 
         <div class="card">
           <p class="card-label">Preneed</p>
           <p class="card-title">Digital leader serving a curated network of high-value partners.</p>
-          <p class="card-body">Prune from 275 to 50 active agencies. Maintain VNB while reducing sales volume. Multi-pay mix to 50%. Concierge-level digital servicing experience.</p>
-        </div>
-
-        <div class="card">
-          <p class="card-label">Annuity</p>
-          <p class="card-title">MYGA launched. FIA by 2027. $2B+ AUM by 2030.</p>
-          <p class="card-body">Capital-light via Aspida Re partnership. Expand to FIA with distribution partner capital commitments. IRR target ~12%. Retain increasing portion of risk over time.</p>
+          <p class="card-body">Prune from 275 to 50 active agencies. Maintain VNB while reducing sales volume. Multi-pay mix to 50%. Concierge-level digital servicing experience for retained partners.</p>
         </div>
 
         <div class="card">
@@ -134,18 +122,23 @@
         <div class="card">
           <p class="card-label">Talent</p>
           <p class="card-title">The right capabilities to execute at each phase.</p>
-          <p class="card-body">Execution risk in growth is often a talent problem first. ALM expertise for annuities, digital UX for enrollment, data science for agent scoring — these are non-optional.</p>
+          <p class="card-body">Execution risk in growth is often a talent problem first. Digital UX for enrollment, data science for agent scoring, actuarial depth for product management — these are non-optional.</p>
+        </div>
+
+        <div class="card">
+          <p class="card-label">Agent Experience</p>
+          <p class="card-title">Make Wellabe the easiest carrier to do business with.</p>
+          <p class="card-body">Agent Portal MVP live June 2026. Real-time incentive capabilities. Performance dashboards. Agents who produce more with us stay with us — the experience is part of the growth strategy.</p>
         </div>
 
       </div>
     </section>
 
     <!-- EXECUTION PHASES -->
-    <section class="section" aria-labelledby="phases-heading">
+    <section id="phases" class="section" aria-labelledby="phases-heading">
       <p class="section-label">How This Shows Up Operationally</p>
       <h2 class="section-title" id="phases-heading">Phased Execution Roadmap</h2>
       <p class="section-body" style="margin-bottom:var(--space-5);">Growth is a phased portfolio — not a single initiative. Each phase has clear outcomes and capital implications.</p>
-
       <div class="phases">
         <div class="phase-card">
           <div class="phase-header">
@@ -154,12 +147,12 @@
           </div>
           <div class="phase-body">
             <ul>
-              <li>Accelerated underwriting for 24hr MS turnaround</li>
+              <li>Accelerated underwriting — 24hr MS turnaround</li>
               <li>CI Easy Button live; HI riders added in 10 states</li>
-              <li>MYGA launched via Aspida Re capital-light structure</li>
               <li>Preneed: data-driven pruning from 275 to 50 agencies</li>
               <li>Agent Portal MVP launched (June 2026)</li>
               <li>Digital enrollment tooling for agents (MyEnroller4)</li>
+              <li>Ancillary health growth via digitized products</li>
             </ul>
           </div>
         </div>
@@ -170,12 +163,12 @@
           </div>
           <div class="phase-body">
             <ul>
-              <li>FIA product launched with distribution partner sidecar</li>
               <li>Consumer-facing MS enrollment (30% of apps)</li>
               <li>Preneed: 75%+ digital adoption across remaining partners</li>
-              <li>Ancillary health cross-sell system built into portal</li>
+              <li>Ancillary health sales system built into agent portal</li>
               <li>White-label HI/CI opportunities for distribution partners</li>
-              <li>MS reinsurance (C-2 financing + quota share) executed</li>
+              <li>MS reinsurance (quota share) executed</li>
+              <li>Agent subscription model — platform as a product</li>
             </ul>
           </div>
         </div>
@@ -187,55 +180,30 @@
           <div class="phase-body">
             <ul>
               <li>Top 5 MS carrier with 300K+ members</li>
-              <li>FIA scaled to $400M+ in annual sales</li>
-              <li>Hybrid health/annuity products launched</li>
               <li>100% paperless Preneed operations</li>
-              <li>Decoupled from annuity launch partner; own ALM</li>
-              <li>Platform ecosystem with agent subscription model</li>
+              <li>Ancillary health as a scaled standalone growth engine</li>
+              <li>Platform ecosystem enabling agent subscription model</li>
+              <li>Consumer-facing direct enrollment live and growing</li>
+              <li>White-label distribution at scale</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KPI SECTION -->
-    <section class="section" aria-labelledby="kpi-heading">
-      <p class="section-label">Execution System</p>
-      <h2 class="section-title" id="kpi-heading">Growth KPIs — <span id="kpi-quarter"></span></h2>
-      <p class="section-body" style="margin-bottom:var(--space-5);">Six KPIs track whether we are executing growth initiatives (execution) and whether those initiatives are producing the intended business results (outcome). Both matter — execution without outcomes is activity; outcomes without execution visibility is luck.</p>
-
-      <div id="kpi-summary"></div>
-
-      <div class="kpi-table-wrap">
-        <table class="kpi-table" aria-label="Growth KPI status table">
-          <thead>
-            <tr>
-              <th style="width:30%">Objective &amp; Owner</th>
-              <th style="width:12%">Type</th>
-              <th style="width:12%">Status</th>
-              <th>Q1 Narrative</th>
-            </tr>
-          </thead>
-          <tbody id="kpi-table-body">
-            <tr><td colspan="4" style="padding:2rem;text-align:center;color:var(--wb-muted);">Loading KPI data…</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP DECISIONS THIS ENABLER ENABLES -->
-    <section class="section" aria-labelledby="decisions-heading">
+    <!-- LEADERSHIP SIGNALS — moved above KPIs -->
+    <section id="signals" class="section" aria-labelledby="signals-heading">
       <p class="section-label">Leadership Signals</p>
-      <h2 class="section-title" id="decisions-heading">What This Enabler Helps Leaders Answer</h2>
+      <h2 class="section-title" id="signals-heading">What This Enabler Helps Leaders Answer</h2>
       <div class="two-col">
         <div>
-          <div class="card" style="border-left:3px solid var(--wb-yellow);">
+          <div class="card" style="border-left:4px solid var(--wb-yellow);">
             <p class="card-label">Questions This Enabler Answers</p>
             <ul style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.75rem;">
               <li style="font-size:var(--text-sm);">Are we capturing enough of the Medicare Supplement market before the competitive window narrows?</li>
               <li style="font-size:var(--text-sm);">Is Preneed pruning on pace, and are we protecting VNB through the transition?</li>
-              <li style="font-size:var(--text-sm);">Are annuity products generating the scale needed for FIA to be viable?</li>
-              <li style="font-size:var(--text-sm);">Is ancillary health cross-sell moving from 2% toward the 5% target?</li>
+              <li style="font-size:var(--text-sm);">Is ancillary health sales growth accelerating as digital products come online?</li>
+              <li style="font-size:var(--text-sm);">Is agent experience improving fast enough to drive retention and production?</li>
             </ul>
           </div>
         </div>
@@ -243,16 +211,41 @@
           <div class="card">
             <p class="card-label">What Yellow/Red Signals Mean</p>
             <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
-              <strong style="color:var(--wb-ink);">Yellow on execution</strong> means we are behind on building the capability. This is usually a resources, priorities, or dependencies problem — solvable in-quarter.<br><br>
-              <strong style="color:var(--wb-ink);">Yellow on outcomes</strong> means the market or the product isn't performing as modeled. This requires a management response — repricing, distribution change, or assumption revision.<br><br>
-              <strong style="color:var(--wb-ink);">Red on growth KPIs</strong> is rare and serious. It means a strategic assumption has broken down and the plan needs a formal response.
+              <strong style="color:var(--wb-ink);">Yellow on execution</strong> means we are behind on building the capability — usually a resources, priorities, or dependencies problem. Solvable in-quarter with management attention.<br><br>
+              <strong style="color:var(--wb-ink);">Yellow on outcomes</strong> means the market or product isn't performing as modeled. Requires a management response: repricing, distribution change, or assumption revision.<br><br>
+              <strong style="color:var(--wb-ink);">Red on growth KPIs</strong> is rare and serious. It means a strategic assumption has broken down and the plan needs a formal response — not just a quarterly note.
             </p>
           </div>
           <div class="card" style="margin-top:var(--space-4);">
             <p class="card-label">What Is Intentionally Not Optimized Here</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Growth does not optimize for short-term sales volume at the expense of underwriting quality. A 40% UW mix at $200M revenue is worse than a 60% UW mix at $130M. Volume without quality destroys embedded value.</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Growth does not optimize for short-term sales volume at the expense of underwriting quality. A 40% UW mix at $200M revenue is worse than a 60% UW mix at $130M. Volume without quality destroys embedded value and creates future capital problems.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- KPI SECTION -->
+    <section id="kpis" class="section" aria-labelledby="kpi-heading">
+      <p class="section-label">Execution System</p>
+      <h2 class="section-title" id="kpi-heading">Growth KPIs — <span id="kpi-quarter"></span></h2>
+      <p class="section-body" style="margin-bottom:var(--space-5);">Six KPIs — four execution, two outcome. Both types matter. Execution without outcomes is activity. Outcomes without execution visibility is luck. Each KPI has a named owner and a department accountable for delivery.</p>
+
+      <div id="kpi-summary"></div>
+
+      <div class="kpi-table-wrap">
+        <table class="kpi-table" aria-label="Growth KPI status table">
+          <thead>
+            <tr>
+              <th style="width:32%">Objective · Owner · Department</th>
+              <th style="width:11%">Type</th>
+              <th style="width:11%">Status</th>
+              <th>Q1 Narrative</th>
+            </tr>
+          </thead>
+          <tbody id="kpi-table-body">
+            <tr><td colspan="4" style="padding:2rem;text-align:center;color:var(--wb-muted);">Loading KPI data…</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 

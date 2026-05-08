@@ -11,11 +11,10 @@
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="36" rx="7" fill="#FFB612"/>
-        <path d="M7 8 L7 24 L13 24 L13 20 L11 20 L11 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M15 8 L15 24 L21 24 L21 20 L19 20 L19 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M23 16 Q26 12 29 16 Q26 20 23 16 Z" fill="#111111" opacity="0.5"/>
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#FFB612"/>
+        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
@@ -45,59 +44,57 @@
 <main>
   <div class="page-wrap">
 
-    <!-- TRACEABILITY -->
-    <section class="section" style="padding-bottom:0;">
+    <!-- PAGE NAVIGATION -->
+    <section class="section" style="padding-bottom:0;padding-top:var(--space-6);">
       <div class="trace-chain">
-        <span class="trace-chain-item active">Capital Enabler</span>
+        <span class="trace-chain-item active"><a href="#intent">Strategic Intent</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Strategic Objective</span>
+        <span class="trace-chain-item"><a href="#objectives">What We Committed To</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Execution / Outcome</span>
+        <span class="trace-chain-item"><a href="#levers">Capital Levers</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">KPI</span>
+        <span class="trace-chain-item"><a href="#signals">Leadership Signals</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Owner</span>
-        <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Status → Signal</span>
+        <span class="trace-chain-item"><a href="#kpis">KPIs</a></span>
       </div>
     </section>
 
     <!-- STRATEGIC INTENT -->
-    <section class="section" aria-labelledby="intent-heading">
+    <section id="intent" class="section" aria-labelledby="intent-heading">
       <p class="section-label">Strategic Intent</p>
       <h2 class="section-title" id="intent-heading">Why This Enabler Exists</h2>
 
-      <!-- Alert banner for active red KPI -->
+      <!-- Active Red KPI alert -->
       <div style="background:var(--status-red-bg);border:1px solid rgba(176,32,32,0.25);border-left:4px solid var(--status-red);border-radius:var(--radius);padding:var(--space-4) var(--space-5);margin-bottom:var(--space-6);">
-        <div style="display:flex;align-items:center;gap:var(--space-3);">
-          <span style="font-size:1.2rem;">🔴</span>
+        <div style="display:flex;align-items:flex-start;gap:var(--space-3);">
+          <span style="font-size:1.2rem;flex-shrink:0;">🔴</span>
           <div>
             <p style="font-weight:700;color:var(--status-red);font-size:var(--text-sm);">Active Red KPI — RBC Trajectory</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-ink);margin-top:0.25rem;">Projected RBC declines to approximately 350% in 2028 at expected sales levels — below the 450% target. Management is actively pursuing surplus notes, FE block reinsurance, structured reinsurance (Canada Life), and Gen Re coinsurance. Nothing is close to execution. The metric is expected to go green as a capital solution reaches greater certainty.</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-ink);margin-top:0.25rem;">RBC is projected to decline well below the 450% target — reaching approximately 350% at the mid-period low point under expected sales levels. Management is actively pursuing an FE block sale (primary track), a surplus note (~$100M), and quota share reinsurance on MS new sales. Nothing is close to execution. The KPI is expected to move green as a capital solution reaches certainty of execution.</p>
           </div>
         </div>
       </div>
 
       <div class="two-col">
         <div>
-          <p class="section-body">Capital is the permission structure for everything else. Medicare Supplement expansion requires over $150M in capital support for new sales between 2025 and 2030. RBC is projected to decline from 735% at YE24 to approximately 450% in 2031 before recovering. The path from here to there requires proactive management — not just monitoring.</p>
-          <p class="section-body" style="margin-top:1rem;">The Capital strategy does three things: it builds a transparent framework for capital allocation decisions (so we stop relitigating the same questions), it develops the tools to forecast capital with confidence, and it maintains the financial resilience to fund the strategy without compromising policyholder protection.</p>
+          <p class="section-body">Capital is the permission structure for everything else. Medicare Supplement expansion requires over $150M in capital support for new sales between 2025 and 2030. RBC is projected to decline from 735% at YE24 before recovering in the early 2030s. The path from here to there requires proactive management — not just monitoring.</p>
+          <p class="section-body" style="margin-top:1rem;">The Capital strategy does three things: builds a transparent framework for allocation decisions, develops the modeling capability to forecast and scenario-plan with confidence, and executes capital solutions that preserve the financial resilience to fund the strategy without compromising policyholder protection.</p>
         </div>
         <div>
           <div class="card" style="margin-bottom:var(--space-4);">
             <p class="card-label">What It Is Meant To Solve</p>
             <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem;">
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>RBC pressure from Medicare Supplement and annuity growth consuming capital faster than earnings generate it (2025–2030)</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Capital allocation decisions made without a transparent, agreed-upon framework</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Actuarial modeling that lacks the agility to support real-time capital decisions</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>RBC pressure from Medicare Supplement growth consuming capital faster than earnings generate it through 2030</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Capital allocation decisions made without a transparent, agreed-upon framework</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Actuarial and financial modeling that hasn't kept pace with the complexity of strategic decisions being asked of it</li>
             </ul>
           </div>
           <div class="card">
             <p class="card-label">Key Tradeoffs</p>
             <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem;">
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Reinsurance reduces required capital but gives up a share of returns and some strategic control</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Surplus notes raise capital with interest cost, reducing product returns on backed capital</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);">→</span>Slowing MS sales growth protects RBC but destroys long-term embedded value and market position</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Reinsurance reduces required capital but cedes a share of returns and some strategic control</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Surplus notes raise capital with interest cost, reducing net returns on backed products</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Slowing MS sales growth protects RBC but destroys long-term embedded value and market position</li>
             </ul>
           </div>
         </div>
@@ -105,76 +102,112 @@
     </section>
 
     <!-- WHAT WE COMMITTED TO -->
-    <section class="section" aria-labelledby="objectives-heading">
+    <section id="objectives" class="section" aria-labelledby="objectives-heading">
       <p class="section-label">What We Committed To</p>
-      <h2 class="section-title" id="objectives-heading">Five Capital Commitments</h2>
+      <h2 class="section-title" id="objectives-heading">Capital Commitments</h2>
       <div class="three-col">
 
         <div class="card">
           <p class="card-label">Capital Framework</p>
           <p class="card-title">A single, transparent framework for every major capital deployment decision.</p>
-          <p class="card-body">IRR, VNB, capital intensity, risk profile, and strategic fit — evaluated consistently. Eliminates "food fight" capital conversations by making the decision criteria visible and agreed-upon in advance. MVP developed and used for 26R2 plan.</p>
+          <p class="card-body">IRR, VNB, capital intensity, risk profile, and strategic fit — evaluated consistently. Eliminates ad hoc capital conversations by making the decision criteria visible and agreed-upon in advance. MVP developed and used for 26R2 plan.</p>
         </div>
 
         <div class="card">
-          <p class="card-label">Actuarial Modeling</p>
-          <p class="card-title">RBC estimates within 3% of actuals. Capital scenarios delivered with agility.</p>
-          <p class="card-body">Pre-covariance RBC calculation within tolerance (Q1 2026). Capital scenario modeling completed and shared with CapCo. Liquidity/cash flow model progressing. The goal: CapCo recommendations that leadership trusts.</p>
+          <p class="card-label">Actuarial &amp; Financial Modeling</p>
+          <p class="card-title">Modeling capability that earns leadership's trust and drives decisions.</p>
+          <p class="card-body">The goal is not a single accuracy metric — it is a modeling environment where CapCo can get credible answers to difficult capital questions quickly. Capital scenario modeling completed in Q1. Liquidity/cash flow model progressing. Leadership should be able to rely on the model, not second-guess it.</p>
         </div>
 
         <div class="card">
           <p class="card-label">RBC Management</p>
-          <p class="card-title">Projected RBC above 450% through 2026–2028. Currently red.</p>
-          <p class="card-body">Multiple tracks active: C-2 financing reinsurance (Hannover/GenRe), quota share on MS new sales (GenRe), surplus note issuance (~$100M via RBC Capital Markets), Agency valuation (ARIS). Management is working toward certainty of execution.</p>
+          <p class="card-title">Projected RBC above 450% through 2026–2028. <span style="color:var(--status-red);font-weight:600;">Currently red.</span></p>
+          <p class="card-body">FE block sale is the primary capital track (monetizes an existing asset). Surplus note issuance (~$100M, RBC Capital Markets) is the second track. Quota share reinsurance on MS new sales is the third. Management is working toward execution certainty on all three.</p>
         </div>
 
         <div class="card">
           <p class="card-label">Capital Opportunities Playbook</p>
-          <p class="card-title">A documented menu of capital actions by circumstance. Currently red.</p>
-          <p class="card-body">Playbook exists but doesn't yet specify which options are preferred under which scenarios. This is not just documentation — it is decision architecture. Completing it means leadership never starts from scratch when capital pressure emerges.</p>
+          <p class="card-title">A documented decision menu by circumstance. <span style="color:var(--status-red);font-weight:600;">Currently red.</span></p>
+          <p class="card-body">Playbook exists but doesn't yet specify which options are preferred under which scenarios. This is decision architecture — it means leadership never starts from scratch when capital pressure emerges again.</p>
         </div>
 
         <div class="card">
           <p class="card-label">Capital Allocation Governance</p>
-          <p class="card-title">CapCo operating with confidence in the models that support it.</p>
-          <p class="card-body">Capital Planning, Capital Allocation, Risk Management, and Performance Monitoring as an integrated system — not separate conversations. Transparency with regulators, rating agencies, and the board.</p>
+          <p class="card-title">CapCo operating as an integrated decision system.</p>
+          <p class="card-body">Capital Planning, Allocation, Risk Management, and Performance Monitoring as one connected system — not separate conversations. Transparent with regulators, rating agencies, and the board.</p>
         </div>
 
         <div class="card">
           <p class="card-label">Strategic Context</p>
-          <p class="card-title">We consume $290M of capital 2025–2028. We recover.</p>
-          <p class="card-body">After-tax earnings on inforce, institutional lines, and new business recoveries make Wellabe capital-accretive again by 2032–2035. The plan is credible under 30+ stress scenarios. The question is execution, not viability.</p>
+          <p class="card-title">We consume ~$290M of capital 2025–2028. We recover.</p>
+          <p class="card-body">After-tax earnings on inforce, institutional lines, and new business recoveries make Wellabe capital-accretive again by 2032–2035. The plan is credible under 30+ stress scenarios. The challenge is execution, not viability.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- CAPITAL LEVERS -->
-    <section class="section" aria-labelledby="levers-heading">
+    <!-- CAPITAL LEVERS — corrected order: FE block sale → surplus note → quota share -->
+    <section id="levers" class="section" aria-labelledby="levers-heading">
       <p class="section-label">How This Shows Up Operationally</p>
-      <h2 class="section-title" id="levers-heading">Capital Management Levers</h2>
+      <h2 class="section-title" id="levers-heading">Capital Solutions — In Priority Order</h2>
+      <p class="section-body" style="margin-bottom:var(--space-5);">Three active tracks, sequenced by proximity to execution and strategic preference.</p>
       <div class="three-col">
-        <div class="card">
-          <p class="card-label">Debt</p>
-          <p class="card-title">Surplus notes as the primary tool.</p>
-          <p class="card-body">Preferred over traditional debt — viewed more favorably by regulators and rating agencies. Maturity and face value flexibility. ~$100M issuance currently in discussion with RBC Capital Markets. Requires regulatory approval.</p>
+
+        <div class="card" style="border-top:4px solid var(--wb-yellow);">
+          <p class="card-label" style="color:var(--wb-yellow-dark);font-weight:700;">Track 1 — Primary</p>
+          <p class="card-title">FE Block Sale</p>
+          <p class="card-body">Monetizes the Final Expense block — an asset already on the books. RBC Capital Markets engaged for valuation. Proceeds generate capital without diluting holding company ownership or incurring ongoing interest cost. Closest to execution certainty of the three tracks.</p>
         </div>
-        <div class="card">
-          <p class="card-label">Reinsurance</p>
-          <p class="card-label" style="color:var(--status-red);margin-top:0.5rem;">Highest Priority</p>
-          <p class="card-title">C-2 financing + quota share on MS block.</p>
-          <p class="card-body">C-2 financing reduces required capital while retaining full block returns (minus ~40–80bps financing fee). Quota share transfers new business strain. Both in active discussions with Hannover, GenRe, Canada Life, and Aspida.</p>
+
+        <div class="card" style="border-top:4px solid var(--wb-border);">
+          <p class="card-label">Track 2</p>
+          <p class="card-title">Surplus Note (~$100M)</p>
+          <p class="card-body">Preferred over traditional debt — viewed more favorably by regulators and rating agencies. Maturity and face value flexibility. Currently in active discussion with RBC Capital Markets. Requires regulatory approval. Adds interest cost but preserves full ownership and operational control.</p>
         </div>
-        <div class="card">
-          <p class="card-label">Equity / Agency</p>
-          <p class="card-title">ARIS Agency valuation underway.</p>
-          <p class="card-body">RBC Capital Markets engaged to value ARIS. Outcome could be sale, borrowing against asset, or bringing in third-party equity owners. Monetizes an asset not currently on the balance sheet. No decision made; valuation first.</p>
+
+        <div class="card" style="border-top:4px solid var(--wb-border);">
+          <p class="card-label">Track 3</p>
+          <p class="card-title">Quota Share Reinsurance on MS New Sales</p>
+          <p class="card-body">Cedes a portion of Medicare Supplement new business to a reinsurer, transferring new business strain in exchange for a share of future returns. Reduces ongoing capital consumption from growth. Active discussions with GenRe as an amendment to the existing treaty. Requires regulatory approval.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEADERSHIP SIGNALS — moved above KPIs -->
+    <section id="signals" class="section" aria-labelledby="signals-heading">
+      <p class="section-label">Leadership Signals</p>
+      <h2 class="section-title" id="signals-heading">What This Enabler Helps Leaders Answer</h2>
+      <div class="two-col">
+        <div>
+          <div class="card" style="border-left:4px solid var(--wb-yellow);">
+            <p class="card-label">Questions This Enabler Answers</p>
+            <ul style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.75rem;">
+              <li style="font-size:var(--text-sm);">Can we sustain the current MS sales plan without breaching our RBC floor?</li>
+              <li style="font-size:var(--text-sm);">Which capital solution track is closest to execution — and what is the hold-up?</li>
+              <li style="font-size:var(--text-sm);">Under which scenarios would we need to reduce MS sales targets to preserve RBC?</li>
+              <li style="font-size:var(--text-sm);">Is our financial modeling capable enough to support real-time capital decision making?</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <p class="card-label">What Red Signals Mean Here</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
+              <strong style="color:var(--status-red);">Red on RBC trajectory</strong> is the most consequential metric on this site. It does not mean we are in crisis — we are not. It means the growth plan, executed as modeled, creates a capital gap that requires an external solution. The management team is working that problem. Leadership and the board should expect quarterly updates on execution certainty of the three capital tracks.<br><br>
+              <strong style="color:var(--status-red);">Red on the Capital Playbook</strong> is a governance risk. Without it, the next capital decision defaults to re-deliberation from scratch rather than a structured evaluation.
+            </p>
+          </div>
+          <div class="card" style="margin-top:var(--space-4);">
+            <p class="card-label">What Is Intentionally Not Optimized Here</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Capital does not optimize for maximum RBC at all times. A very high RBC ratio in a growth-oriented mutual insurer often signals under-deployment — capital sitting idle rather than funding policyholder value. The target range exists for a reason.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- KPI SECTION -->
-    <section class="section" aria-labelledby="kpi-heading">
+    <section id="kpis" class="section" aria-labelledby="kpi-heading">
       <p class="section-label">Execution System</p>
       <h2 class="section-title" id="kpi-heading">Capital KPIs — <span id="kpi-quarter"></span></h2>
       <p class="section-body" style="margin-bottom:var(--space-5);">Six KPIs. Four green. Two red — the RBC trajectory and the Capital Opportunities Playbook. Both have named owners and active management plans. Red here is not a surprise; it is a documented risk with a defined response.</p>
@@ -185,9 +218,9 @@
         <table class="kpi-table" aria-label="Capital KPI status table">
           <thead>
             <tr>
-              <th style="width:30%">Objective &amp; Owner</th>
-              <th style="width:12%">Type</th>
-              <th style="width:12%">Status</th>
+              <th style="width:32%">Objective · Owner · Department</th>
+              <th style="width:11%">Type</th>
+              <th style="width:11%">Status</th>
               <th>Q1 Narrative</th>
             </tr>
           </thead>
@@ -195,38 +228,6 @@
             <tr><td colspan="4" style="padding:2rem;text-align:center;color:var(--wb-muted);">Loading KPI data…</td></tr>
           </tbody>
         </table>
-      </div>
-    </section>
-
-    <!-- LEADERSHIP SIGNALS -->
-    <section class="section" aria-labelledby="decisions-heading">
-      <p class="section-label">Leadership Signals</p>
-      <h2 class="section-title" id="decisions-heading">What This Enabler Helps Leaders Answer</h2>
-      <div class="two-col">
-        <div>
-          <div class="card" style="border-left:3px solid var(--wb-yellow);">
-            <p class="card-label">Questions This Enabler Answers</p>
-            <ul style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.75rem;">
-              <li style="font-size:var(--text-sm);">Can we sustain the current MS sales plan without breaching our RBC floor?</li>
-              <li style="font-size:var(--text-sm);">Which capital solution should we execute first, given lead times and regulatory requirements?</li>
-              <li style="font-size:var(--text-sm);">Under which scenarios would we need to reduce MS sales targets to preserve RBC?</li>
-              <li style="font-size:var(--text-sm);">Is our capital forecasting model reliable enough to commit to strategic decisions?</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div class="card">
-            <p class="card-label">What Red Signals Mean Here</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
-              <strong style="color:var(--status-red);">Red on RBC trajectory</strong> is the most consequential metric on this site. It does not mean we are in crisis — we are not. It means the growth plan, executed as modeled, creates a capital gap that requires an external solution. The management team is working that problem. Leadership and the board should expect quarterly updates on execution certainty of the capital tracks in motion.<br><br>
-              <strong style="color:var(--status-red);">Red on the Capital Playbook</strong> is a governance risk, not an operational risk. If the playbook is not completed, the next capital decision defaults to re-deliberation from scratch.
-            </p>
-          </div>
-          <div class="card" style="margin-top:var(--space-4);">
-            <p class="card-label">What Is Intentionally Not Optimized Here</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Capital does not optimize for maximum RBC at all times. A very high RBC ratio in a growth-oriented mutual insurer often means under-deployment — leaving policyholder value on the table. The target range exists for a reason.</p>
-          </div>
-        </div>
       </div>
     </section>
 

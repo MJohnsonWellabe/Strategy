@@ -2,55 +2,73 @@
   "quarter": "Q1 2026",
   "lastUpdated": "May 2026",
   "summary": {
-    "growth": { "green": 4, "yellow": 2, "red": 0 },
-    "digital": { "green": 23, "yellow": 1, "red": 0 },
-    "capital": { "green": 4, "yellow": 0, "red": 2 }
+    "growth": {
+      "green": 4,
+      "yellow": 2,
+      "red": 0
+    },
+    "digital": {
+      "green": 23,
+      "yellow": 1,
+      "red": 0
+    },
+    "capital": {
+      "green": 4,
+      "yellow": 0,
+      "red": 2
+    }
   },
   "growth": [
     {
       "id": "g1",
-      "objective": "MS Optimization — Execution",
+      "objective": "MS Optimization \u2014 Execution",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Execution",
       "status": "green",
       "narrative": "19% weighted premium rerates. 3 states flipped charters (MO, CO, KS). Delayed commission reduction to 5/1."
     },
     {
       "id": "g2",
-      "objective": "MS Optimization — Outcome",
+      "objective": "MS Optimization \u2014 Outcome",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Outcome",
       "status": "green",
       "narrative": "$2M in YTD savings on Integrity marketing allowance. $1.2M on MS incentive savings. $270K in GHN savings. 49% UW mix YTD. 8.9% rolling 12-month lapse through 3/31."
     },
     {
       "id": "g3",
-      "objective": "Ancillary Digitization — Execution",
+      "objective": "Ancillary Digitization \u2014 Execution",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Execution",
       "status": "green",
       "narrative": "CI Easy button implemented."
     },
     {
       "id": "g4",
-      "objective": "Ancillary Digitization — Outcome",
+      "objective": "Ancillary Digitization \u2014 Outcome",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Outcome",
       "status": "green",
       "narrative": "20% increase in ancillary health sales in Q1 2026 vs Q1 2025."
     },
     {
       "id": "g5",
-      "objective": "PN Digitization — Execution",
+      "objective": "PN Digitization \u2014 Execution",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Execution",
       "status": "yellow",
       "narrative": "Annual plan in process. Quality score not yet implemented. No agents terminated. Minor service improvements to date."
     },
     {
       "id": "g6",
-      "objective": "PN Digitization — Outcome",
+      "objective": "PN Digitization \u2014 Outcome",
       "owner": "Matt Johnson",
+      "department": "Product",
       "type": "Outcome",
       "status": "yellow",
       "narrative": "ME% 2025: 44.7% vs 2026: 50.4%. MP% level to prior year. Avg face slightly up."
@@ -60,15 +78,17 @@
     {
       "id": "d1",
       "objective": "Data Migration Completeness",
-      "owner": "Vik (Data)",
+      "owner": "Vik",
+      "department": "Data",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 35% migrated into Data Lakehouse."
+      "narrative": "On Track \u2014 35% migrated into Data Lakehouse."
     },
     {
       "id": "d2",
       "objective": "Enterprise Data Quality Score",
-      "owner": "Vik (Data)",
+      "owner": "Vik",
+      "department": "Data",
       "type": "Outcome",
       "status": "green",
       "narrative": "Score: 95 (target >90). Strong data quality achieved."
@@ -76,71 +96,80 @@
     {
       "id": "d3",
       "objective": "Report Migration Rate",
-      "owner": "Vik (Data)",
+      "owner": "Vik",
+      "department": "Data",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 17% of reports migrated to Lakehouse."
+      "narrative": "On Track \u2014 17% of reports migrated to Lakehouse."
     },
     {
       "id": "d4",
       "objective": "User Engagement Rate",
-      "owner": "Vik (Data)",
+      "owner": "Vik",
+      "department": "Data",
       "type": "Outcome",
       "status": "green",
-      "narrative": "On Track — 50% user engagement rate, above goal."
+      "narrative": "On Track \u2014 50% user engagement rate, above goal."
     },
     {
       "id": "d5",
       "objective": "AI Innovation and Deployment",
-      "owner": "Vik (Data)",
+      "owner": "Vik",
+      "department": "Data",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 1 AI use case in pipeline. Intake and use cases on target."
+      "narrative": "On Track \u2014 1 AI use case in pipeline. Intake and use cases on target."
     },
     {
       "id": "d6",
       "objective": "Automate Agent Administration & Compensation",
-      "owner": "Marty (Ops)",
+      "owner": "Marty",
+      "department": "Operations",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 9% increase. 2026 health lack-of-production automation driving the increase. Targeting health state management and health econtracting changes."
+      "narrative": "On Track \u2014 9% increase. Health lack-of-production automation driving gains. Targeting health state management and econtracting changes."
     },
     {
       "id": "d7",
       "objective": "Automate New Business Processing",
-      "owner": "Marty (Ops)",
+      "owner": "Marty",
+      "department": "Operations",
       "type": "Execution",
       "status": "yellow",
-      "narrative": "1% increase. Health below 2025 levels due to GI/SEP volumes and slight increase in underwritten cases not going STP. Preneed trending up due to stoppage of paper apps in Nov 2025. GI/SEP Med Sup automation efforts in progress."
+      "narrative": "1% increase vs 7% target. Health below 2025 levels due to GI/SEP volumes. Preneed trending up. GI/SEP Med Sup automation in progress; expected before AEP."
     },
     {
       "id": "d8",
       "objective": "Automate Customer Success Requests",
-      "owner": "Marty (Ops)",
+      "owner": "Marty",
+      "department": "Operations",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 8% increase. Seeing benefits of one-time credit card automation completed at end of 2025. 2026 Preneed grace period management driving up automation."
+      "narrative": "On Track \u2014 8% increase. Credit card automation and Preneed grace period management driving gains."
     },
     {
       "id": "d9",
       "objective": "Expand Self-Service Phone Offerings",
-      "owner": "Marty (Ops)",
+      "owner": "Marty",
+      "department": "Operations",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 4% increase. Higher IVA usage but no major containment changes. Claims status experience improved. Further opportunities under evaluation."
+      "narrative": "On Track \u2014 4% increase. Higher IVA usage. Claims status experience improved."
     },
     {
       "id": "d10",
       "objective": "Auto Adjudicate Claims",
-      "owner": "Marty (Ops)",
+      "owner": "Marty",
+      "department": "Operations",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track — 0.1% increase. Research underway on future opportunities in Med Sup and ancillary products. Target: auto-adjudicate 6K additional applications/quarter."
+      "narrative": "On Track \u2014 0.1% increase. Target: auto-adjudicate 6K additional applications/quarter."
     },
     {
       "id": "d11",
-      "objective": "Digital Transformation — Continuous Improvement Culture",
-      "owner": "Maneesh (IT)",
+      "objective": "Continuous Process Improvement Culture",
+      "owner": "Maneesh",
+      "department": "Technology",
       "type": "Execution",
       "status": "green",
       "narrative": "On Track. Agent Admin kaizen event planned for May 2026. Critical items from previous Kaizens incorporated into 2026 goals."
@@ -148,106 +177,119 @@
     {
       "id": "d12",
       "objective": "Mature Architecture Practices",
-      "owner": "Maneesh (IT)",
+      "owner": "Maneesh",
+      "department": "Technology",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track. Enterprise architecture view in progress. Architectural standards under review for ARB. Architecture incorporated into PACT process."
+      "narrative": "On Track. Enterprise architecture view in progress. Architectural standards under review for ARB."
     },
     {
       "id": "d13",
       "objective": "Mature AI & Automation Capabilities",
-      "owner": "Maneesh (IT)",
+      "owner": "Maneesh",
+      "department": "Technology",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track. AI next steps in progress. 1st round of AI intake scheduled for June 2026. AI & Automation CoE for Operations efficiencies underway."
+      "narrative": "On Track. 1st round of AI intake scheduled for June 2026. AI & Automation CoE underway."
     },
     {
       "id": "d14",
       "objective": "AI Education & Adoption",
-      "owner": "Maneesh (IT)",
+      "owner": "Maneesh",
+      "department": "Technology",
       "type": "Outcome",
       "status": "green",
-      "narrative": "On Track. 333/374 employees actively using Copilot with 20,000 prompts in last 30 days. Collaborating with HR on AI education and change management."
+      "narrative": "On Track. 333/374 employees actively using Copilot with 20,000 prompts in last 30 days."
     },
     {
       "id": "d15",
-      "objective": "Speed to Market — Product Rollout Optimization",
-      "owner": "Maneesh (IT)",
+      "objective": "Speed to Market \u2014 Product Rollout Optimization",
+      "owner": "Maneesh",
+      "department": "Technology",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track. TMO process improvement in progress. Started evaluation of long-term solution."
+      "narrative": "On Track. TMO process improvement in progress. Long-term solution evaluation started."
     },
     {
       "id": "d16",
       "objective": "Consolidate and Update Agent Portals",
-      "owner": "Allison (Agent)",
+      "owner": "Allison",
+      "department": "Distribution",
       "type": "Execution",
       "status": "green",
-      "narrative": "On Track. MVP launch is on track for late June 2026."
+      "narrative": "On Track. MVP launch on track for late June 2026."
     },
     {
       "id": "d17",
       "objective": "Agent Journey Mapping",
-      "owner": "Allison (Agent)",
+      "owner": "Allison",
+      "department": "Distribution",
       "type": "Execution",
       "status": "green",
-      "narrative": "Exercise will begin in May 2026. High-value changes to be identified."
+      "narrative": "Exercise begins May 2026. High-value changes to be identified."
     },
     {
       "id": "d18",
       "objective": "Customer Communications & Message Center",
-      "owner": "Susan (Rewards)",
+      "owner": "Susan",
+      "department": "Customer Engagement",
       "type": "Execution",
       "status": "green",
-      "narrative": "Message Center project on track for July/August delivery. Text short code has reached approval. Conversion Reporting in progress."
+      "narrative": "Message Center on track for July/August. Text short code approved. Conversion Reporting in progress."
     },
     {
       "id": "d19",
       "objective": "Real-Time Engagement Data & VoC Insights",
-      "owner": "Susan (Rewards)",
+      "owner": "Susan",
+      "department": "Customer Engagement",
       "type": "Outcome",
       "status": "green",
-      "narrative": "CE Data Science working with Ent Data to ingest Sentiment, ahead of schedule. CSAT work kicks off in July."
+      "narrative": "Sentiment ingestion ahead of schedule. CSAT work kicks off July."
     },
     {
       "id": "d20",
-      "objective": "Remove Friction — Payment, Claims, Onboarding Journeys",
-      "owner": "Susan (Rewards)",
+      "objective": "Remove Friction \u2014 Payment, Claims, Onboarding",
+      "owner": "Susan",
+      "department": "Customer Engagement",
       "type": "Execution",
       "status": "green",
-      "narrative": "Payment journeys on track to deliver by end of Q2. Claims journey on HI begun and on track for Q3."
+      "narrative": "Payment journeys on track for end of Q2. Claims journey on HI begun, on track for Q3."
     },
     {
       "id": "d21",
       "objective": "AI-Powered Churn Prediction & Intervention",
-      "owner": "Susan (Rewards)",
+      "owner": "Susan",
+      "department": "Customer Engagement",
       "type": "Outcome",
       "status": "green",
-      "narrative": "Churn modeling begun. Will deliver by end of Q2 with journeys beginning in Q3."
+      "narrative": "Churn modeling begun. Delivering end of Q2 with journeys starting Q3."
     },
     {
       "id": "d22",
       "objective": "Unified Customer & Rewards Portal",
-      "owner": "Susan (Rewards)",
+      "owner": "Susan",
+      "department": "Customer Engagement",
       "type": "Execution",
       "status": "green",
-      "narrative": "Portal project kicked off. Requirements gathered and work begun."
+      "narrative": "Portal kicked off. Requirements gathered and work begun."
     },
     {
       "id": "d23",
       "objective": "Right Talent for Digital Strategy",
-      "owner": "April (HR)",
+      "owner": "April",
+      "department": "HR",
       "type": "Outcome",
       "status": "green",
-      "narrative": "All ELT roles have a ready-soon internal successor. BOD awareness and plan for CEO succession in place."
+      "narrative": "All ELT roles have a ready-soon internal successor. BOD awareness and CEO succession plan in place."
     },
     {
       "id": "d24",
       "objective": "Change Adoption & Sustained Performance",
-      "owner": "April (HR)",
+      "owner": "April",
+      "department": "HR",
       "type": "Outcome",
       "status": "green",
-      "narrative": "Demonstrated by dedicated resources and workspace for Agent Portal. Improved movement on PaaP and collaboration of AI strategy."
+      "narrative": "Demonstrated by dedicated resources for Agent Portal, improved movement on PaaP, and AI strategy collaboration."
     }
   ],
   "capital": [
@@ -255,46 +297,52 @@
       "id": "c1",
       "objective": "Capital Framework for Decisioning",
       "owner": "Jeff Harms",
+      "department": "Finance",
       "type": "Execution",
       "status": "green",
       "narrative": "MVP framework developed and utilized for 26R2 plan. Refinements expected prior to 27R1."
     },
     {
       "id": "c2",
-      "objective": "YE RBC Estimate Within 3% of Actuals",
+      "objective": "Capital Modeling Supports Decision Making",
       "owner": "Matt Johnson",
+      "department": "Actuarial",
       "type": "Outcome",
       "status": "green",
-      "narrative": "Pre-covariance RBC calculation within tolerance. Charge by charge ties out well (~2bps off). Slippage in Covariance assumption due to entity-level actual calculations vs. rolled-up modeling calculation."
+      "narrative": "Capital scenario modeling completed in Q1 and ready to share with CapCo. Liquidity/cash flow model progressing. Model is informing real decisions with confidence."
     },
     {
       "id": "c3",
       "objective": "Improved Capital Forecasting",
       "owner": "Matt Johnson",
+      "department": "Actuarial",
       "type": "Execution",
       "status": "green",
-      "narrative": "On track. Significant capital scenario modeling completed in Q1. To be shared with CapCo."
+      "narrative": "On track. Significant scenario modeling completed in Q1, to be shared with CapCo."
     },
     {
       "id": "c4",
       "objective": "Enhanced Cash Flow Forecasting",
       "owner": "Matt Johnson",
+      "department": "Actuarial",
       "type": "Execution",
       "status": "green",
-      "narrative": "On track. Progress made on liquidity/cash flow model. Appropriate resources assigned. Continue to test and iterate."
+      "narrative": "On track. Liquidity/cash flow model progressing. Appropriate resources assigned."
     },
     {
       "id": "c5",
-      "objective": "Maintain Projected RBC Above 450% (2026–2028)",
+      "objective": "Maintain Projected RBC Above 450% (2026\u20132028)",
       "owner": "Sara Lehan",
+      "department": "Finance",
       "type": "Outcome",
       "status": "red",
-      "narrative": "Working several tracks: surplus note, FE block reinsurance, structured reinsurance with Canada Life, Gen Re coinsurance. Nothing close to execution yet. RBC drops below 350% at expected sales levels."
+      "narrative": "RBC projected to decline well below 450% \u2014 reaching approximately 350% at the mid-period low point at expected sales levels. FE block sale (primary track), surplus note (~$100M), and quota share reinsurance on MS new sales being pursued. Nothing close to execution yet."
     },
     {
       "id": "c6",
       "objective": "Capital Opportunities Playbook",
       "owner": "Jeff Harms",
+      "department": "Finance",
       "type": "Execution",
       "status": "red",
       "narrative": "Playbook established but does not yet outline which opportunities are preferable under varying circumstances. Further work needed."
@@ -302,31 +350,22 @@
   ],
   "learningAndDecisions": [
     {
-      "id": "l1",
+      "id": "ld_annuity_exit",
       "type": "decision",
       "date": "Q1 2026",
-      "title": "[Decision Title]",
-      "owner": "[Owner]",
-      "description": "Describe the strategic decision made, the alternatives considered, and the rationale.",
-      "impact": "[Impact on strategy or operations]"
+      "title": "Exit Annuity Strategy \u2014 Removed from 2025\u20132030 Plan",
+      "owner": "ELT",
+      "description": "After a thorough review in Q1 2026, leadership made the decision to remove the annuity product line from Wellabe's 2025\u20132030 strategic plan. The decision was not reactive \u2014 it reflected a deliberate reassessment of the risk-adjusted return profile of annuities relative to our core products in the current and projected interest rate environment, and a clear-eyed view of where Wellabe has durable competitive advantages.\n\nThe interest rate context matters. Annuity products \u2014 particularly MYGAs and FIAs \u2014 derive their attractiveness to consumers from the spread between crediting rates and Wellabe's investment yields. As interest rates have shifted from the environment modeled in the original plan, the economics of the MYGA product (which were already highly sensitive to ceding commission and scale) became significantly less favorable. A 5bps change in ceding commission flips MYGA IRR from marginally positive to negative. The margin of safety was too thin for a product line in which Wellabe was still building internal expertise.\n\nEqually important was a reaffirmation of where Wellabe's competitive advantages actually lie. Our core products \u2014 Medicare Supplement, ancillary health, and Preneed \u2014 benefit from decades of underwriting knowledge, established distribution relationships, brand trust, and actuarial depth. These are defensible positions. Annuities required building new capabilities in ALM, hedging, FIA pricing, and third-party administrator management essentially from scratch, while simultaneously depending on reinsurance partners for capital relief and distribution partners for sales volume. That level of execution dependency on external parties, in a product category where Wellabe had limited institutional knowledge, represented a concentration of strategic risk that was not commensurate with the expected return.\n\nThe capital consideration was decisive. Medicare Supplement growth alone is projected to consume over $150M in capital support between 2025 and 2030. Adding annuity capital requirements \u2014 even in a capital-light reinsurance structure \u2014 would have compounded RBC pressure at precisely the moment when capital flexibility is most critical. Removing annuities allows the organization to direct its financial and operational resources toward the businesses where it has the highest conviction.\n\nThe growth strategy has been updated accordingly. All references to MYGA, FIA, and annuity partnership structures have been removed from planning documents and KPI frameworks.",
+      "impact": "Growth strategy reoriented around Medicare Supplement, ancillary health, and Preneed. Capital plan simplified \u2014 annuity-related RBC strain removed from projections. Distribution and technology investments refocused on core product digital experiences. ALM and annuity-specific actuarial build-out deferred indefinitely."
     },
     {
-      "id": "l2",
-      "type": "assumption",
+      "id": "ld_surplus_note_primary",
+      "type": "decision",
       "date": "Q1 2026",
-      "title": "[Assumption That Changed]",
-      "owner": "[Owner]",
-      "description": "Describe what assumption changed, why it changed, and how the strategy should adapt.",
-      "impact": "[Downstream impact]"
-    },
-    {
-      "id": "l3",
-      "type": "risk",
-      "date": "Q1 2026",
-      "title": "[Risk Name]",
-      "owner": "[Owner]",
-      "description": "Describe the specific risk — not in generic language. Name the mechanism, the trigger, and the exposure.",
-      "impact": "[What happens if this materializes]"
+      "title": "Surplus Note Designated as Primary Capital Solution",
+      "owner": "Sara Lehan, Jeff Harms, Scott Haugh",
+      "description": "Following a structured review of available capital management levers, Wellabe's leadership designated the issuance of a surplus note \u2014 targeting approximately $100M \u2014 as the organization's primary capital solution for resolving the projected RBC shortfall.\n\nThe decision was made through the capital framework developed in 2025 and used for the 26R2 plan, which evaluates capital instruments across six dimensions: expected impact on RBC, cost of capital, effect on product returns, governance and regulatory complexity, speed to execution, and strategic control implications. The surplus note performed most favorably across this framework.\n\nWhy a surplus note and not an alternative? Surplus notes are subordinated debt instruments that qualify as regulatory capital under insurance accounting rules \u2014 a distinction that makes them uniquely valuable in the insurance context. Unlike traditional debt, a surplus note improves RBC directly. Unlike quota share reinsurance, it does not cede any portion of future product returns or require Wellabe to share underwriting risk management authority with a counterparty. Unlike an equity transaction or agency sale, it does not involve permanent ownership dilution or the monetization of a long-term asset at what may be a suboptimal moment.\n\nThe cost of capital is also relatively attractive. At the interest rates currently available to Wellabe \u2014 given its AM Best A (Excellent) rating \u2014 a surplus note represents one of the cheapest forms of external capital accessible to a mutual insurer. The annual interest expense, while real, is modest relative to the embedded value that Medicare Supplement growth is expected to generate over the 2025\u20132030 period. In other words, the business case is clear: the cost of the note is far lower than the cost of slowing MS sales to protect RBC organically.\n\nRBC Capital Markets has been engaged to advise on the issuance. Key execution steps are: completing the preliminary sizing analysis, identifying likely note purchasers among institutional fixed-income investors, obtaining Iowa Insurance Division regulatory approval, and executing the transaction. Estimated timeline to execution: 9\u201315 months from engagement. The primary risk to the surplus note track is regulatory approval timing \u2014 surplus note issuance requires explicit prior approval from the domiciliary regulator, and that process is not fully predictable.\n\nThe FE block sale and MS quota share reinsurance remain active secondary tracks and will be advanced in parallel. If the surplus note faces regulatory delay, these tracks provide execution optionality. However, leadership's preference \u2014 and the track being given primary resource attention \u2014 is the surplus note.",
+      "impact": "RBC Capital Markets formally engaged for ~$100M issuance. FE block sale and quota share reinsurance maintained as parallel secondary tracks. Capital Opportunities Playbook to be updated to reflect this prioritization and the decision rationale for future reference. CapCo to receive quarterly updates on execution progress. The RBC KPI remains red until a capital solution reaches sufficient certainty of execution."
     }
   ]
 }

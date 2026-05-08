@@ -11,11 +11,10 @@
 <nav class="site-nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="36" height="36" rx="7" fill="#FFB612"/>
-        <path d="M7 8 L7 24 L13 24 L13 20 L11 20 L11 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M15 8 L15 24 L21 24 L21 20 L19 20 L19 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M23 16 Q26 12 29 16 Q26 20 23 16 Z" fill="#111111" opacity="0.5"/>
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="36" height="36" rx="6" fill="#FFB612"/>
+        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
@@ -45,25 +44,23 @@
 <main>
   <div class="page-wrap">
 
-    <!-- TRACEABILITY -->
-    <section class="section" style="padding-bottom:0;">
+    <!-- PAGE NAVIGATION -->
+    <section class="section" style="padding-bottom:0;padding-top:var(--space-6);">
       <div class="trace-chain">
-        <span class="trace-chain-item active">Digital Enabler</span>
+        <span class="trace-chain-item active"><a href="#intent">Strategic Intent</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Strategic Objective</span>
+        <span class="trace-chain-item"><a href="#objectives">What We Committed To</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Execution / Outcome</span>
+        <span class="trace-chain-item"><a href="#phases">Digital Roadmap</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">KPI</span>
+        <span class="trace-chain-item"><a href="#signals">Leadership Signals</a></span>
         <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Owner</span>
-        <span class="trace-chain-arrow">→</span>
-        <span class="trace-chain-item">Status → Signal</span>
+        <span class="trace-chain-item"><a href="#kpis">KPIs</a></span>
       </div>
     </section>
 
     <!-- STRATEGIC INTENT -->
-    <section class="section" aria-labelledby="intent-heading">
+    <section id="intent" class="section" aria-labelledby="intent-heading">
       <p class="section-label">Strategic Intent</p>
       <h2 class="section-title" id="intent-heading">Why This Enabler Exists</h2>
       <div class="two-col">
@@ -94,7 +91,7 @@
     </section>
 
     <!-- WHAT WE COMMITTED TO -->
-    <section class="section" aria-labelledby="objectives-heading">
+    <section id="objectives" class="section" aria-labelledby="objectives-heading">
       <p class="section-label">What We Committed To</p>
       <h2 class="section-title" id="objectives-heading">Four Digital Dimensions</h2>
       <div class="two-col">
@@ -127,7 +124,7 @@
     </section>
 
     <!-- EXECUTION PHASES -->
-    <section class="section" aria-labelledby="phases-heading">
+    <section id="phases" class="section" aria-labelledby="phases-heading">
       <p class="section-label">How This Shows Up Operationally</p>
       <h2 class="section-title" id="phases-heading">Digital Maturity Roadmap</h2>
       <div class="phases">
@@ -196,6 +193,32 @@
           <thead>
             <tr>
               <th style="width:30%">Objective &amp; Owner</th>
+              <th style="width:12%">Type</th>
+              <th style="width:12%">Status</th>
+              <th>Q1 Narrative</th>
+            </tr>
+          </thead>
+          <tbody id="kpi-table-body">
+            <tr><td colspan="4" style="padding:2rem;text-align:center;color:var(--wb-muted);">Loading KPI data…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- KPI SECTION -->
+    <section id="kpis" class="section" aria-labelledby="kpi-heading">
+      <p class="section-label">Execution System</p>
+      <h2 class="section-title" id="kpi-heading">Digital KPIs — <span id="kpi-quarter"></span></h2>
+      <p class="section-body" style="margin-bottom:var(--space-5);">24 KPIs across Data, Operations, IT, Agent Experience, Customer Engagement, and HR. 23 are green. One yellow — New Business automation — is being addressed by projects expected to launch before AEP.</p>
+
+      <div id="kpi-summary"></div>
+
+      <div class="kpi-table-wrap">
+        <table class="kpi-table" aria-label="Digital KPI status table">
+          <thead>
+            <tr>
+              <th style="width:32%">Objective · Owner · Department</th>
               <th style="width:12%">Type</th>
               <th style="width:12%">Status</th>
               <th>Q1 Narrative</th>

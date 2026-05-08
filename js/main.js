@@ -84,11 +84,12 @@ async function loadKPIs() {
         const dot = `<span class="status-dot ${kpi.status}"></span>`;
         const chip = `<span class="status-chip ${kpi.status}">${dot}${cap(kpi.status)}</span>`;
         const typeBadge = `<span class="kpi-type-badge">${kpi.type}</span>`;
+        const dept = kpi.department ? `<span class="kpi-dept">${kpi.department}</span>` : '';
         rows.push(`
           <tr>
             <td>
               <div class="kpi-objective">${kpi.objective}</div>
-              <div class="kpi-owner">${kpi.owner}</div>
+              <div class="kpi-owner">${kpi.owner}${dept ? ' · ' : ''}${dept}</div>
             </td>
             <td>${typeBadge}</td>
             <td>${chip}</td>
@@ -147,7 +148,13 @@ function renderLDItems(items, container) {
     return;
   }
 
-  container.innerHTML = items.map((item, idx) => `
+  container.innerHTML = items.map((item, idx) => {
+    // Render description with paragraph breaks on \n\n
+    const descParas = escHtml(item.description)
+      .split('\\n\\n')
+      .map(p => `<p class="learning-item-body" style="margin-bottom:0.6rem">${p.replace(/\\n/g,'<br>')}</p>`)
+      .join('');
+    return `
     <div class="learning-item" data-idx="${idx}">
       <div class="learning-item-header">
         <div>
@@ -160,10 +167,10 @@ function renderLDItems(items, container) {
           <button class="btn btn-danger ld-delete" data-idx="${idx}" style="font-size:0.78rem;padding:0.25rem 0.6rem">Delete</button>
         </div>
       </div>
-      <p class="learning-item-body">${escHtml(item.description)}</p>
+      ${descParas}
       ${item.impact ? `<div class="learning-item-impact">Impact: ${escHtml(item.impact)}</div>` : ''}
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
   // Bind edit/delete
   qsa('.ld-edit', container).forEach(btn => {
@@ -190,11 +197,10 @@ function initLDEditor(defaultItems) {
 
   if (!container) return;
 
-  // Seed with defaults from JSON if no localStorage data yet
+  // Seed real items from JSON on first visit (skip placeholder-only items)
   const existingRaw = localStorage.getItem(LD_KEY);
   if (!existingRaw && defaultItems && defaultItems.length > 0) {
-    // Only seed with real items (filter out placeholder ones)
-    const real = defaultItems.filter(i => !i.title.startsWith('['));
+    const real = defaultItems.filter(i => i.title && !i.title.startsWith('['));
     if (real.length > 0) saveLDItems(real);
   }
 

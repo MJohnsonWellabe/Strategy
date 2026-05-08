@@ -19,12 +19,9 @@
     <!-- Wellabe logo lockup (double-L mark replicated in SVG) -->
     <a href="index.html" class="nav-logo" aria-label="Wellabe Strategy Home">
       <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="36" height="36" rx="7" fill="#FFB612"/>
-        <!-- Stylized double-L mark -->
-        <path d="M7 8 L7 24 L13 24 L13 20 L11 20 L11 8 Z" fill="#111111" opacity="0.95"/>
-        <path d="M15 8 L15 24 L21 24 L21 20 L19 20 L19 8 Z" fill="#111111" opacity="0.95"/>
-        <!-- Connecting flourish -->
-        <path d="M23 16 Q26 12 29 16 Q26 20 23 16 Z" fill="#111111" opacity="0.5"/>
+        <rect width="36" height="36" rx="6" fill="#FFB612"/>
+        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
@@ -140,20 +137,6 @@
       </div>
     </section>
 
-    <!-- ARE WE WINNING? SNAPSHOT -->
-    <section class="section" aria-labelledby="winning-heading">
-      <p class="section-label">Quarterly Pulse</p>
-      <h2 class="section-title" id="winning-heading">Are We Winning? <span id="kpi-quarter" style="font-size:var(--text-lg);color:var(--wb-muted);font-family:var(--font-body);font-weight:400;"></span></h2>
-      <p class="section-body" style="margin-bottom:var(--space-5);">High-level KPI health by enabler. Click any enabler to see full detail.</p>
-
-      <!-- Summary pills — populated by JS -->
-      <div id="kpi-summary" class="kpi-summary-bar" aria-live="polite"></div>
-
-      <a href="quarterly.html" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:var(--text-sm);font-weight:600;color:var(--wb-yellow-dark);">
-        View full quarterly operating memo →
-      </a>
-    </section>
-
     <!-- THREE STRATEGIC ENABLERS -->
     <section class="section" aria-labelledby="enablers-heading">
       <p class="section-label">The Three Engines</p>
@@ -167,7 +150,7 @@
           <div class="enabler-tile-accent"></div>
           <div class="enabler-tile-icon">📈</div>
           <h3>Growth Strategy</h3>
-          <p>Expand Medicare Supplement leadership, build the Preneed digital platform, scale annuities, and grow ancillary health. Bold product ambition disciplined by profitability and capital constraints.</p>
+          <p>Expand Medicare Supplement leadership, build the Preneed digital platform, and grow ancillary health sales. Bold product ambition disciplined by profitability and capital constraints.</p>
           <div class="enabler-tile-status">
             <span class="status-chip green"><span class="status-dot green"></span>4 Green</span>
             <span class="status-chip yellow"><span class="status-dot yellow"></span>2 Yellow</span>
@@ -202,6 +185,21 @@
         </a>
 
       </div>
+    </section>
+
+
+    <!-- ARE WE WINNING? SNAPSHOT -->
+    <section class="section" aria-labelledby="winning-heading">
+      <p class="section-label">Quarterly Pulse</p>
+      <h2 class="section-title" id="winning-heading">Are We Winning? <span id="kpi-quarter" style="font-size:var(--text-lg);color:var(--wb-muted);font-family:var(--font-body);font-weight:400;"></span></h2>
+      <p class="section-body" style="margin-bottom:var(--space-5);">High-level KPI health by enabler. Click any enabler to see full detail.</p>
+
+      <!-- Summary pills — populated by JS -->
+      <div id="kpi-summary" class="kpi-summary-bar" aria-live="polite"></div>
+
+      <a href="quarterly.html" style="display:inline-flex;align-items:center;gap:0.4rem;font-size:var(--text-sm);font-weight:600;color:var(--wb-yellow-dark);">
+        View full quarterly operating memo →
+      </a>
     </section>
 
   </div><!-- /page-wrap -->
