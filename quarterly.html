@@ -3,31 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quarterly Operating View — Wellabe Q1 2026</title>
+  <title>Quarterly Operating View — Wellabe</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-section="all">
 
-<nav class="site-nav">
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="36" height="36" rx="6" fill="#FFB612"/>
-        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <a href="index.html" class="nav-logo" aria-label="Wellabe Strategy Home">
+      <img src="img/wellabe-logo.png" alt="Wellabe" class="nav-logo-img">
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
         <span class="nav-logo-sub">Strategy · 2025–2030</span>
       </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html"     class="nav-link">Home</a></li>
-      <li><a href="growth.html"    class="nav-link">Growth</a></li>
-      <li><a href="digital.html"   class="nav-link">Digital-First</a></li>
-      <li><a href="capital.html"   class="nav-link">Capital</a></li>
-      <li><a href="quarterly.html" class="nav-link active">Quarterly View</a></li>
-      <li><a href="learning.html"  class="nav-link">Learning &amp; Risks</a></li>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html"     class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="growth.html"    class="nav-link" data-page="growth.html">Growth</a></li>
+      <li><a href="digital.html"   class="nav-link" data-page="digital.html">Digital-First</a></li>
+      <li><a href="capital.html"   class="nav-link" data-page="capital.html">Capital</a></li>
+      <li><a href="quarterly.html" class="nav-link" data-page="quarterly.html">Quarterly View</a></li>
+      <li><a href="learning.html"  class="nav-link" data-page="learning.html">Learning &amp; Risks</a></li>
       <span class="nav-badge" id="kpi-quarter"></span>
     </ul>
   </div>
@@ -36,8 +35,17 @@
 <header class="page-header">
   <div class="page-header-inner">
     <p class="page-header-eyebrow">Quarterly Operating View</p>
-    <h1>Q1 2026 Management Memo</h1>
-    <p>A persistent record of where we are, what changed, and what management is doing next. This is not a dashboard — it is a board-grade operating summary.</p>
+    <h1 id="memo-title">Q1 2026 Management Memo</h1>
+    <div style="margin-top:var(--space-4);display:flex;align-items:center;gap:var(--space-3);">
+      <label for="quarter-selector" style="font-size:var(--text-sm);color:rgba(255,255,255,0.7);font-weight:500;">View quarter:</label>
+      <select id="quarter-selector" style="font-family:var(--font-body);font-size:var(--text-sm);font-weight:600;padding:0.35rem 0.75rem;border-radius:var(--radius);border:2px solid var(--wb-yellow);background:var(--wb-black);color:var(--wb-yellow);cursor:pointer;">
+        <option value="Q1 2026" selected>Q1 2026</option>
+        <option value="Q2 2026">Q2 2026</option>
+        <option value="Q3 2026">Q3 2026</option>
+        <option value="Q4 2026">Q4 2026</option>
+      </select>
+    </div>
+    <p>A running record of where we stand, what's changed, and what we're doing about it. Updated every quarter. Built to keep leadership and the business aligned on the same set of facts.</p>
   </div>
 </header>
 
@@ -52,6 +60,7 @@
     </section>
 
     <!-- BOARD MEMO -->
+    <div id="memo-section">
     <section class="section" aria-labelledby="memo-heading">
       <p class="section-label">Executive Summary</p>
       <h2 class="section-title" id="memo-heading">Q1 2026 Operating Memo</h2>
@@ -83,7 +92,7 @@
           </div>
           <div class="memo-item">
             <span class="memo-item-label">What's Next</span>
-            <div class="memo-item-body">PN quality score implementation and initial agent terminations. Continue MS charter management. Advance ancillary health digital tooling. PN quality score implementation and initial agent terminations are the near-term operational priorities.</div>
+            <div class="memo-item-body">Continue MS charter management — additional state rerate opportunities in pipeline. Advance ancillary health digital tooling. PN quality score and agent network refinements underway per annual plan timeline.</div>
           </div>
         </div>
       </div>
@@ -138,17 +147,26 @@
           <div class="memo-item">
             <span class="memo-item-label">What's Red</span>
             <div class="memo-item-body">
-              <strong>RBC trajectory:</strong> RBC projected to decline well below 450% — reaching approximately 350% at the mid-period low point at expected sales levels. The 450% target is not met under the baseline MS sales plan. Management is actively working three tracks in priority order: FE block sale (primary — monetizes existing asset), surplus note issuance (~$100M via RBC Capital Markets), and quota share reinsurance on MS new sales (GenRe). Nothing is close to execution yet. The RBC KPI is expected to move green as a solution reaches certainty.<br><br>
+              <strong>RBC trajectory:</strong> RBC projected to decline well below 450% — reaching approximately 350% at the mid-period low point at expected sales levels. The 450% target is not met under the baseline MS sales plan. Management is actively working three tracks in priority order: FE block sale (primary — monetizes existing asset), surplus note issuance (~$150M via RBC Capital Markets), and quota share reinsurance on MS new sales (GenRe). Nothing is close to execution yet. The RBC KPI is expected to move green as a solution reaches certainty.<br><br>
               <strong>Capital Playbook:</strong> Exists but does not yet specify which options are preferred under varying circumstances. Needs further work before it is a reliable decision tool.
             </div>
           </div>
           <div class="memo-item">
             <span class="memo-item-label">What's Next</span>
-            <div class="memo-item-body">Advance capital solution tracks toward term sheets. Complete Capital Opportunities Playbook with circumstance-specific recommendations. Share CapCo capital scenario modeling. Finalize ARIS agency valuation.</div>
+            <div class="memo-item-body">Advance capital solution tracks toward term sheets. Complete Capital Opportunities Playbook with circumstance-specific recommendations. Share CapCo capital scenario modeling. </div>
           </div>
         </div>
       </div>
     </section>
+
+    </div><!-- /memo-section -->
+
+    <!-- FUTURE QUARTER PLACEHOLDER -->
+    <div id="future-memo-notice" style="display:none;text-align:center;padding:var(--space-10) var(--space-6);background:var(--wb-white);border:1px solid var(--wb-border);border-radius:var(--radius-lg);margin-bottom:var(--space-6);">
+      <div style="font-size:2.5rem;margin-bottom:var(--space-3);">📋</div>
+      <h3 style="font-size:var(--text-xl);margin-bottom:var(--space-3);">Results for <strong id="future-quarter-label">this quarter</strong> are not yet available.</h3>
+      <p style="color:var(--wb-muted);font-size:var(--text-md);">Check back once the quarter closes and the team has completed the KPI review.</p>
+    </div>
 
     <!-- FULL KPI TABLE -->
     <section class="section" aria-labelledby="full-kpi-heading">

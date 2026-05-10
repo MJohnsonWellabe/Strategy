@@ -8,26 +8,25 @@
 </head>
 <body data-section="digital">
 
-<nav class="site-nav">
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="36" height="36" rx="6" fill="#FFB612"/>
-        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <a href="index.html" class="nav-logo" aria-label="Wellabe Strategy Home">
+      <img src="img/wellabe-logo.png" alt="Wellabe" class="nav-logo-img">
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
         <span class="nav-logo-sub">Strategy · 2025–2030</span>
       </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html"     class="nav-link">Home</a></li>
-      <li><a href="growth.html"    class="nav-link">Growth</a></li>
-      <li><a href="digital.html"   class="nav-link active">Digital-First</a></li>
-      <li><a href="capital.html"   class="nav-link">Capital</a></li>
-      <li><a href="quarterly.html" class="nav-link">Quarterly View</a></li>
-      <li><a href="learning.html"  class="nav-link">Learning &amp; Risks</a></li>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html"     class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="growth.html"    class="nav-link" data-page="growth.html">Growth</a></li>
+      <li><a href="digital.html"   class="nav-link" data-page="digital.html">Digital-First</a></li>
+      <li><a href="capital.html"   class="nav-link" data-page="capital.html">Capital</a></li>
+      <li><a href="quarterly.html" class="nav-link" data-page="quarterly.html">Quarterly View</a></li>
+      <li><a href="learning.html"  class="nav-link" data-page="learning.html">Learning &amp; Risks</a></li>
       <span class="nav-badge" id="kpi-quarter"></span>
     </ul>
   </div>
@@ -66,7 +65,7 @@
       <div class="two-col">
         <div>
           <p class="section-body">The 2023 strategy called it "operational rationalization." The 2025 strategy renames it Digital-First — and the shift matters. Operational rationalization was defensive: do more with less. Digital-First is offensive: embed data, AI, and digital capabilities into the fabric of every function to enable real-time decision-making, seamless experiences, and scalable innovation.</p>
-          <p class="section-body" style="margin-top:1rem;">The vision: all applications submitted electronically at point of sale. All phone calls self-service or automated. All post-issue transactions self-service. 100% auto-adjudication of claims. Every agent transaction automated. This is not a technology roadmap — it is a picture of the company we are building.</p>
+          <p class="section-body" style="margin-top:1rem;">The vision: all applications submitted electronically at point of sale. All phone calls self-service or automated. All post-issue transactions self-service. 100% auto-adjudication of claims. Every agent transaction automated. We know this is ambitious — and that's exactly the point. If you shoot for the moon and miss, you still land somewhere extraordinary. The target is aggressive because the industry is moving and standing still is not a strategy.</p>
         </div>
         <div>
           <div class="card" style="margin-bottom:var(--space-4);">
@@ -180,28 +179,41 @@
       </div>
     </section>
 
-    <!-- KPI SECTION -->
-    <section class="section" aria-labelledby="kpi-heading">
-      <p class="section-label">Execution System</p>
-      <h2 class="section-title" id="kpi-heading">Digital KPIs — <span id="kpi-quarter"></span></h2>
-      <p class="section-body" style="margin-bottom:var(--space-5);">24 KPIs across Data, Operations, IT, Agent Experience, Customer Engagement, and HR. 23 are green. One yellow — New Business automation — is being addressed by projects expected to launch before AEP.</p>
 
-      <div id="kpi-summary"></div>
 
-      <div class="kpi-table-wrap">
-        <table class="kpi-table" aria-label="Digital KPI status table">
-          <thead>
-            <tr>
-              <th style="width:30%">Objective &amp; Owner</th>
-              <th style="width:12%">Type</th>
-              <th style="width:12%">Status</th>
-              <th>Q1 Narrative</th>
-            </tr>
-          </thead>
-          <tbody id="kpi-table-body">
-            <tr><td colspan="4" style="padding:2rem;text-align:center;color:var(--wb-muted);">Loading KPI data…</td></tr>
-          </tbody>
-        </table>
+
+    <!-- LEADERSHIP SIGNALS -->
+    <section id="signals" class="section" aria-labelledby="decisions-heading">
+      <p class="section-label">Leadership Signals</p>
+      <h2 class="section-title" id="decisions-heading">What This Enabler Helps Leaders Answer</h2>
+      <div class="two-col">
+        <div>
+          <div class="card" style="border-left:3px solid var(--wb-yellow);">
+            <p class="card-label">Questions This Enabler Answers</p>
+            <ul style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.75rem;">
+              <li style="font-size:var(--text-sm);">Are we automating fast enough to keep pace with volume growth without adding proportional headcount?</li>
+              <li style="font-size:var(--text-sm);">Is our data infrastructure trustworthy enough to make AI-enabled decisions reliable?</li>
+              <li style="font-size:var(--text-sm);">Are agents and customers experiencing tangibly better interactions quarter over quarter?</li>
+              <li style="font-size:var(--text-sm);">Is AI moving from experimental to embedded — with governance in place?</li>
+              <li style="font-size:var(--text-sm);">Do we have the right talent composition to execute the next phase?</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <p class="card-label">How to Read Yellow &amp; Red Signals</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
+              <strong style="color:var(--wb-ink);">Yellow — Execution:</strong> We are behind on building a capability. Usually a resourcing, prioritization, or dependency issue. Solvable in-quarter with focused management attention.<br><br>
+              <strong style="color:var(--wb-ink);">Yellow — Outcome:</strong> A digital investment isn't producing the expected result yet. May require timeline adjustment, scope change, or assumption revision before the next quarter.<br><br>
+              <strong style="color:var(--wb-ink);">Red — Execution:</strong> A critical workstream has materially stalled. Escalation warranted — leadership should be problem-solving, not monitoring.<br><br>
+              <strong style="color:var(--wb-ink);">Red — Outcome:</strong> A foundational assumption about digital impact has broken down. Requires formal review and a strategic response.
+            </p>
+          </div>
+          <div class="card" style="margin-top:var(--space-4);">
+            <p class="card-label">What Is Intentionally Not Optimized Here</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Digital does not optimize for technology adoption for its own sake. Copilot usage is tracked not because prompts are valuable — but because AI literacy is an organizational capability that compounds. Tools without literacy do nothing.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -231,39 +243,6 @@
       </div>
     </section>
 
-    <!-- LEADERSHIP SIGNALS -->
-    <section class="section" aria-labelledby="decisions-heading">
-      <p class="section-label">Leadership Signals</p>
-      <h2 class="section-title" id="decisions-heading">What This Enabler Helps Leaders Answer</h2>
-      <div class="two-col">
-        <div>
-          <div class="card" style="border-left:3px solid var(--wb-yellow);">
-            <p class="card-label">Questions This Enabler Answers</p>
-            <ul style="display:flex;flex-direction:column;gap:0.6rem;margin-top:0.75rem;">
-              <li style="font-size:var(--text-sm);">Are we automating fast enough to keep pace with volume growth without adding proportional headcount?</li>
-              <li style="font-size:var(--text-sm);">Is our data infrastructure trustworthy enough to make AI-enabled decisions reliable?</li>
-              <li style="font-size:var(--text-sm);">Are agents and customers experiencing tangibly better interactions quarter over quarter?</li>
-              <li style="font-size:var(--text-sm);">Is AI moving from experimental to embedded — with governance in place?</li>
-              <li style="font-size:var(--text-sm);">Do we have the right talent composition to execute the next phase?</li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div class="card">
-            <p class="card-label">What Yellow/Red Signals Mean</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
-              <strong style="color:var(--wb-ink);">Yellow on New Business automation</strong> (current) means health volume complexity is outpacing automation readiness. Projects are in flight; resolution expected by AEP. No action required unless timeline slips.<br><br>
-              <strong style="color:var(--wb-ink);">Yellow on data quality or lakehouse migration</strong> would be a foundational signal — AI and analytics built on bad data are worse than no analytics.<br><br>
-              <strong style="color:var(--wb-ink);">Red on talent KPIs</strong> would mean the strategy is at risk at the execution layer, not the technology layer.
-            </p>
-          </div>
-          <div class="card" style="margin-top:var(--space-4);">
-            <p class="card-label">What Is Intentionally Not Optimized Here</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">Digital does not optimize for technology adoption for its own sake. Copilot usage is tracked not because prompts are valuable — but because AI literacy is an organizational capability that compounds. Tools without literacy do nothing.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
   </div>
 </main>

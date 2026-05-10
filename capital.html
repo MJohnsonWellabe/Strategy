@@ -8,26 +8,25 @@
 </head>
 <body data-section="capital">
 
-<nav class="site-nav">
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="36" height="36" rx="6" fill="#FFB612"/>
-        <path d="M 8,28 C 8,22 5,14 9,9 C 11,6 16,5 17,9 C 18,13 14,17 12,20 C 10,23 11,27 13,28 C 15,29 17,27 18,24 C 19,21 19,18 19,18" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M 19,18 C 19,14 17,8 21,5 C 23,3 28,3 28,7 C 28,11 24,15 22,18 C 20,21 21,26 23,27 C 25,28 27,26 28,23 C 29,20 29,17 29,17" fill="none" stroke="#111111" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+    <a href="index.html" class="nav-logo" aria-label="Wellabe Strategy Home">
+      <img src="img/wellabe-logo.png" alt="Wellabe" class="nav-logo-img">
       <div class="nav-logo-text">
         <span class="nav-logo-brand">Wellabe</span>
         <span class="nav-logo-sub">Strategy · 2025–2030</span>
       </div>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html"     class="nav-link">Home</a></li>
-      <li><a href="growth.html"    class="nav-link">Growth</a></li>
-      <li><a href="digital.html"   class="nav-link">Digital-First</a></li>
-      <li><a href="capital.html"   class="nav-link active">Capital</a></li>
-      <li><a href="quarterly.html" class="nav-link">Quarterly View</a></li>
-      <li><a href="learning.html"  class="nav-link">Learning &amp; Risks</a></li>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html"     class="nav-link" data-page="index.html">Home</a></li>
+      <li><a href="growth.html"    class="nav-link" data-page="growth.html">Growth</a></li>
+      <li><a href="digital.html"   class="nav-link" data-page="digital.html">Digital-First</a></li>
+      <li><a href="capital.html"   class="nav-link" data-page="capital.html">Capital</a></li>
+      <li><a href="quarterly.html" class="nav-link" data-page="quarterly.html">Quarterly View</a></li>
+      <li><a href="learning.html"  class="nav-link" data-page="learning.html">Learning &amp; Risks</a></li>
       <span class="nav-badge" id="kpi-quarter"></span>
     </ul>
   </div>
@@ -70,7 +69,7 @@
           <span style="font-size:1.2rem;flex-shrink:0;">🔴</span>
           <div>
             <p style="font-weight:700;color:var(--status-red);font-size:var(--text-sm);">Active Red KPI — RBC Trajectory</p>
-            <p style="font-size:var(--text-sm);color:var(--wb-ink);margin-top:0.25rem;">RBC is projected to decline well below the 450% target — reaching approximately 350% at the mid-period low point under expected sales levels. Management is actively pursuing an FE block sale (primary track), a surplus note (~$100M), and quota share reinsurance on MS new sales. Nothing is close to execution. The KPI is expected to move green as a capital solution reaches certainty of execution.</p>
+            <p style="font-size:var(--text-sm);color:var(--wb-ink);margin-top:0.25rem;">RBC is projected to decline well below the 450% target — reaching approximately 350% at the mid-period low point under expected sales levels, without capital levers being pulled. Management is actively pursuing an FE block sale (primary track), a surplus note (~$150M), and quota share reinsurance on MS new sales. Nothing is close to execution. The KPI is expected to move green as a capital solution reaches certainty of execution.</p>
           </div>
         </div>
       </div>
@@ -86,7 +85,7 @@
             <ul style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.5rem;">
               <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>RBC pressure from Medicare Supplement growth consuming capital faster than earnings generate it through 2030</li>
               <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Capital allocation decisions made without a transparent, agreed-upon framework</li>
-              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>Actuarial and financial modeling that hasn't kept pace with the complexity of strategic decisions being asked of it</li>
+              <li style="font-size:var(--text-sm);color:var(--wb-ink);display:flex;gap:0.5rem;"><span style="color:var(--wb-yellow-dark);font-weight:700;">→</span>The need to model complex multi-year capital scenarios quickly and credibly — so CapCo decisions are grounded in data, not debate</li>
             </ul>
           </div>
           <div class="card">
@@ -122,7 +121,7 @@
         <div class="card">
           <p class="card-label">RBC Management</p>
           <p class="card-title">Projected RBC above 450% through 2026–2028. <span style="color:var(--status-red);font-weight:600;">Currently red.</span></p>
-          <p class="card-body">FE block sale is the primary capital track (monetizes an existing asset). Surplus note issuance (~$100M, RBC Capital Markets) is the second track. Quota share reinsurance on MS new sales is the third. Management is working toward execution certainty on all three.</p>
+          <p class="card-body">FE block sale is the primary capital track (monetizes an existing asset). Surplus note issuance (~$150M, RBC Capital Markets) is the second track. Quota share reinsurance on MS new sales is the third. Management is working toward execution certainty on all three.</p>
         </div>
 
         <div class="card">
@@ -140,7 +139,7 @@
         <div class="card">
           <p class="card-label">Strategic Context</p>
           <p class="card-title">We consume ~$290M of capital 2025–2028. We recover.</p>
-          <p class="card-body">After-tax earnings on inforce, institutional lines, and new business recoveries make Wellabe capital-accretive again by 2032–2035. The plan is credible under 30+ stress scenarios. The challenge is execution, not viability.</p>
+          <p class="card-body">After-tax earnings on inforce, institutional lines, and new business recoveries make Wellabe capital-accretive again by 2030–2031. The plan is credible under 30+ stress scenarios. We are managing a defined capital trough — not an open-ended shortfall. The challenge is execution, not viability.</p>
         </div>
 
       </div>
@@ -192,10 +191,12 @@
         </div>
         <div>
           <div class="card">
-            <p class="card-label">What Red Signals Mean Here</p>
+            <p class="card-label">How to Read Yellow &amp; Red Signals</p>
             <p style="font-size:var(--text-sm);color:var(--wb-muted);margin-top:0.5rem;line-height:1.7;">
-              <strong style="color:var(--status-red);">Red on RBC trajectory</strong> is the most consequential metric on this site. It does not mean we are in crisis — we are not. It means the growth plan, executed as modeled, creates a capital gap that requires an external solution. The management team is working that problem. Leadership and the board should expect quarterly updates on execution certainty of the three capital tracks.<br><br>
-              <strong style="color:var(--status-red);">Red on the Capital Playbook</strong> is a governance risk. Without it, the next capital decision defaults to re-deliberation from scratch rather than a structured evaluation.
+              <strong style="color:var(--wb-ink);">Yellow — Execution:</strong> A capital initiative is behind schedule or facing a process obstacle. Usually solvable but needs named accountability and a clear resolution path.<br><br>
+              <strong style="color:var(--wb-ink);">Yellow — Outcome:</strong> A capital metric is trending in the wrong direction but not yet in breach. Requires proactive management — not just monitoring.<br><br>
+              <strong style="color:var(--wb-ink);">Red — Execution:</strong> A capital solution track has stalled or lost execution certainty. Escalation required. Leadership and the board should be engaged directly.<br><br>
+              <strong style="color:var(--wb-ink);">Red — Outcome:</strong> A capital metric is in breach of its target. The current state is <em>not a crisis</em> — it is a defined gap with active solutions in motion. The RBC KPI will move green when a solution reaches execution certainty.
             </p>
           </div>
           <div class="card" style="margin-top:var(--space-4);">
